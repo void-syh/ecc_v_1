@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--<meta http-equiv="Access-Control-Allow-Origin" content="*" />-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The ECCode™ Online Dictionary</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link href="css/materialdesignicons.min.css" rel="stylesheet">
+		<style>
+			.write_hua{
+				height:300px;
+				width:300px;
+				border-radius: 8px;
+				border:0.5px solid;
+				text-align: center;
+					
+				position:fixed;
+				z-index:2;
+				top:-300px;
+			}
+		</style>
+	</head>
+	<body>
+		
+
+		<div class="search">
+			<div class="container">
+				<br>
+				<div class="input-group col-12 col-md-10 offset-md-2 p-0 align-content-md-start">
+					<input type="text" id="search1" class="search1 form-control" placeholder="Input Chinese Character" aria-label="Recipient's username"
+					 aria-describedby="basic-addon2" autocomplete="off">
+
+					<div class="input-group-append">
+						<button class="btn btn-outline-primary button_search" type="button" id="button-addon2">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+
+		</div>
+		<div class="tianzige">
+			<div class="one" style="display:none;">
+				<div class="col-8 d-md-none offset-2" style="height:240px">
+					<div style="height:200px">
+						<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:200px;"></a>
+						<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button1" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+						<div id="character-target-div1" class="position-absolute"></div>
+					</div>
+					<div style="height:48px">
+						<button class="write btn btn-primary" style="width:200px">Write!</button>
+						<div class="chinese_pinyin_one_m col-12 h-100"></div>
+						<audio src="" autoplay>
+							您的浏览器不支持 audio 标签。
+						</audio>
+					</div>
+				</div>
+
+				<div class="col-2 d-none position-fixed d-md-block d-lg-none p-0" style="height:280px;z-index:999">
+					<div class="h-50">
+						<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px;"></a>
+						<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button2" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+						<div id="character-target-div2" class="position-absolute"></div>
+					</div>
+					<div class="h-50">
+						<button class="write btn btn-primary" style="width: 140px">Write!</button>
+						<div class="chinese_pinyin_one col-12 h-100"></div>
+						<audio src="" autoplay>
+							您的浏览器不支持 audio 标签。
+						</audio>
+					</div>
+				</div>
+				<div class="col-2 d-none position-fixed d-lg-block p-0" style="height:300px;z-index:999">
+					<div class="h-50">
+						<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+						<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button3" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+						<div id="character-target-div3" class="position-absolute"></div>
+					</div>
+					<div class="h-50">
+						<button class="write btn btn-primary" style="width: 150px">Write!</button>
+						<div class="chinese_pinyin_one col-12 h-100"></div>
+						<audio src="" autoplay>
+							您的浏览器不支持 audio 标签。
+						</audio>
+					</div>
+				</div>
+			</div>
+
+			<div class="two" style="display:none;">
+
+				<div class="container position-relative d-sm-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center;height: 140px">
+						<div class="position-relative col-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button40" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div40" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-6 offset-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px"></a>
+								</div>
+							</div>
+							<div id="character-target-div41" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container position-relative d-none d-sm-block d-md-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center; height: 200px">
+						<div class="position-relative col-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:200px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button30" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div30" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-6 offset-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:200px"></a>
+								</div>
+							</div>
+							<div id="character-target-div31" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid d-none position-fixed d-md-block d-lg-none p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height: 260px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:130px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button20" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div20" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:130px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div21" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none position-fixed d-lg-block p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height:300px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button10" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div10" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div11" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="three" style="display:none;">
+
+				<div class="container position-relative d-sm-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center;height: 140px">
+						<div class="position-relative col-4">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button400" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div400" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-4 offset-4">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px"></a>
+								</div>
+							</div>
+							<div id="character-target-div401" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-4 offset-8">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:140px"></a>
+								</div>
+							</div>
+							<div id="character-target-div402" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container position-relative d-none d-sm-block d-md-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center; height: 160px">
+						<div class="position-relative col-4">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:160px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button300" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div300" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-4 offset-4">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:160px"></a>
+								</div>
+							</div>
+							<div id="character-target-div301" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-4 offset-8">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:160px"></a>
+								</div>
+							</div>
+							<div id="character-target-div302" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid d-none position-fixed d-md-block d-lg-none p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height: 260px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:130px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button200" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div200" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:130px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div201" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:130px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div202" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none position-fixed d-lg-block p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height:300px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button100" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div100" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div101" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:150px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div102" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="four" style="display:none;">
+
+				<div class="container position-relative d-sm-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center;height: 100px">
+						<div class="position-relative col-3">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button4000" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div4000" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-3">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px"></a>
+								</div>
+							</div>
+							<div id="character-target-div4001" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px"></a>
+								</div>
+							</div>
+							<div id="character-target-div4002" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-9">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px"></a>
+								</div>
+							</div>
+							<div id="character-target-div4003" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container position-relative d-none d-sm-block d-md-none mt-5">
+					<div class="col-12 position-relative" style="text-align: center; height: 120px">
+						<div class="position-relative col-3">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button3000" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div3000" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-3">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px"></a>
+								</div>
+							</div>
+							<div id="character-target-div3001" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-6">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px"></a>
+								</div>
+							</div>
+							<div id="character-target-div3002" class="position-absolute"></div>
+						</div>
+						<div class="position-relative col-3 offset-9">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px"></a>
+								</div>
+							</div>
+							<div id="character-target-div3003" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid d-none position-fixed d-md-block d-lg-none p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height: 200px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button2000" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div2000" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div2001" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div2002" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute h-100">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:100px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div2003" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none position-fixed d-lg-block p-0">
+					<div class="col-2  position-relative p-0" style="text-align: center;height:240px">
+						<div class="position-relative h-50">
+							<div class="h-100 position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px;"></a>
+									<a><img class="position-absolute" src="img/dictionary/stop.jpg" id="animate-button1000" style="height:30px;margin-top:4px;margin-left:4px;z-index:3;"></a>
+								</div>
+							</div>
+							<div id="character-target-div1000" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div1001" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div1002" class="position-absolute"></div>
+						</div>
+						<div class="position-relative h-50">
+							<div class="position-absolute">
+								<div class="position-relative">
+									<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:120px;"></a>
+								</div>
+							</div>
+							<div id="character-target-div1003" class="position-absolute"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="write_hua col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-10 offset-1" style="z-index:10">
+
+			<div class="position-relative h-100">
+				<div>
+					<a class="close">&otimes;</a>
+				</div>
+				<div class="h-100 position-absolute ml-4" style="margin-top:20px;">
+					<a><img class="position-absolute" src="img/dictionary/tianzige.jpg" style="height:200px;"></a>
+					<div id="character-target-div4" class="position-absolute"></div>
+				</div>
+				<button class="btn btn-primary" id="quiz-reset" style="margin-top: 250px;"> try again</button>
+			</div>
+		</div>
+		<div class="basic mt-5">
+			<div class="container position-relative d-md-none">
+				<button class="btn btn-primary col-12" style="margin-top:65px ;" type="button" data-toggle="collapse" data-target="#collapsebasic"
+				 aria-expanded="true" aria-controls="collapsebasic">
+					Basic Information
+				</button>
+				<div class="collapse show col-12 p-0" id="collapsebasic">
+					<div class="basic-content border rounded border-dark" style="height:100px;">
+						<ol></ol>
+					</div>
+				</div>
+			</div>
+			<div class="container position-relative d-none d-md-block mb-3">
+				<p class="btn btn-primary col-10 offset-2">
+					Basic Information
+				</p>
+				<div class="basic-content border rounded border-dark col-10 offset-2 p-0" style="height:200px;">
+					<ol>
+
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="phrase" id="phrase_all">
+			<div class="container position-relative d-md-none">
+				<button class="phrase-head btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#collapsephrase"
+				 aria-expanded="ture" aria-controls="collapsephrase">
+					Phrases and Sentences
+				</button>
+				<div class="collapse show col-12 p-0" id="collapsephrase">
+					<div class="phrase-content-m border rounded border-dark" style="height:100px;">
+						<div class="phrase-content-all">
+
+						</div>
+						<div class="btn-group phrase-button" role="group" aria-label="Basic example" style="float: right;">
+							<button type="button" class="btn btn-primary previous">Previous</button>
+							<button type="button" class="btn btn-primary">...</button>
+							<button type="button" class="btn btn-primary next">Next</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container position-relative d-none d-md-block mb-3">
+				<p class="phrase-head btn btn-primary col-10 offset-2">
+					Phrases and Sentences
+				</p>
+				<div class="phrase-content border rounded border-dark col-10 offset-2 p-0" style="height:200px;font-size:18px;">
+					<div class="phrase-content-all">
+
+					</div>
+					<div class="btn-group phrase-button" role="group" aria-label="Basic example" style="float: right;">
+						<button type="button" class="btn btn-primary previous">Previous</button>
+						<button type="button" class="btn btn-primary">...</button>
+						<button type="button" class="btn btn-primary next">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="Information">
+			<div class="container position-relative d-md-none">
+				<button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#collapseInformation"
+				 aria-expanded="ture" aria-controls="collapseInformation">
+					Supplementary information
+				</button>
+				<div class="collapse show col-12" id="collapseInformation">
+					<div class="row" style="height:64px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">Radical<br />
+								<ruby>
+									<rb>偏</rb>
+									<rp>(</rp>
+									<rt>piān</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>旁</rb>
+									<rp>(</rp>
+									<rt>pánɡ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>部</rb>
+									<rp>(</rp>
+									<rt>bù</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>首</rb>
+									<rp>(</rp>
+									<rt>shǒu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="radical col-6 border rounded border-dark" style="text-align: center;line-height: 64px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:64px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">
+								Strokes<br />
+								<ruby>
+									<rb>笔</rb>
+									<rp>(</rp>
+									<rt>bǐ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>画</rb>
+									<rp>(</rp>
+									<rt>huà</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>数</rb>
+									<rp>(</rp>
+									<rt>shù</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Strokes col-6 border rounded border-dark" style="text-align: center;line-height: 64px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:64px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">
+								Traditional Structure<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>字</rb>
+									<rp>(</rp>
+									<rt>zì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>结</rb>
+									<rp>(</rp>
+									<rt>jié</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>构</rb>
+									<rp>(</rp>
+									<rt>ɡòu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="hzStructure col-6 border rounded border-dark" style="text-align: center;line-height: 64px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:82px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">
+								Code-elements of Encoded Shape Constituents<br />
+								<ruby>
+									<rb>形</rb>
+									<rp>(</rp>
+									<rt>xínɡ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>元</rb>
+									<rp>(</rp>
+									<rt>yuán</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Constituents col-6 border rounded border-dark" style="text-align: center;line-height: 82px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:64px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">
+								Structure By ECCode™<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>易</rb>
+									<rp>(</rp>
+									<rt>yì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>结</rb>
+									<rp>(</rp>
+									<rt>jié</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>构</rb>
+									<rp>(</rp>
+									<rt>ɡòu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Structure col-6 border rounded border-dark" style="text-align: center;line-height: 64px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:64px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;font-size:14px;">
+								Standard Code<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>字</rb>
+									<rp>(</rp>
+									<rt>zì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>标</rb>
+									<rp>(</rp>
+									<rt>biāo</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>准</rb>
+									<rp>(</rp>
+									<rt>zhǔn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>代</rb>
+									<rp>(</rp>
+									<rt>dài</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Code col-6 border rounded border-dark" style="text-align: center;line-height: 64px;">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container position-relative d-none d-md-block mb-3">
+				<p class="btn btn-primary col-10 offset-2">
+					Supplementary information
+				</p>
+				<div class=" border rounded border-dark col-10 offset-2" style="height:450px;">
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">Radical<br />
+								<ruby>
+									<rb>偏</rb>
+									<rp>(</rp>
+									<rt>piān</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>旁</rb>
+									<rp>(</rp>
+									<rt>pánɡ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>部</rb>
+									<rp>(</rp>
+									<rt>bù</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>首</rb>
+									<rp>(</rp>
+									<rt>shǒu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="radical col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">
+								Strokes<br />
+								<ruby>
+									<rb>笔</rb>
+									<rp>(</rp>
+									<rt>bǐ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>画</rb>
+									<rp>(</rp>
+									<rt>huà</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>数</rb>
+									<rp>(</rp>
+									<rt>shù</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Strokes col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">
+								Traditional Structure<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>字</rb>
+									<rp>(</rp>
+									<rt>zì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>结</rb>
+									<rp>(</rp>
+									<rt>jié</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>构</rb>
+									<rp>(</rp>
+									<rt>ɡòu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="hzStructure col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">
+								Code-elements of Encoded Shape Constituents<br />
+								<ruby>
+									<rb>形</rb>
+									<rp>(</rp>
+									<rt>xínɡ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>元</rb>
+									<rp>(</rp>
+									<rt>yuán</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Constituents col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">
+								Structure By ECCode™<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>易</rb>
+									<rp>(</rp>
+									<rt>yì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>结</rb>
+									<rp>(</rp>
+									<rt>jié</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>构</rb>
+									<rp>(</rp>
+									<rt>ɡòu</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Structure col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+					<div class="row" style="height:75px;">
+						<div class="col-6 border rounded border-dark">
+							<p style="text-align: center;">
+								Standard Code<br />
+								<ruby>
+									<rb>汉</rb>
+									<rp>(</rp>
+									<rt>hàn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>字</rb>
+									<rp>(</rp>
+									<rt>zì</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>标</rb>
+									<rp>(</rp>
+									<rt>biāo</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>准</rb>
+									<rp>(</rp>
+									<rt>zhǔn</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>代</rb>
+									<rp>(</rp>
+									<rt>dài</rt>
+									<rp>)</rp>
+								</ruby>
+								<ruby>
+									<rb>码</rb>
+									<rp>(</rp>
+									<rt>mǎ</rt>
+									<rp>)</rp>
+								</ruby>
+							</p>
+						</div>
+						<div class="Code col-6 border rounded border-dark" style="text-align: center;line-height:75px;">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer position-relative">
+			<div class="container-fluid mt-5" style="text-align: center;">
+				<p style="font-size:18px;">&copy;2019 Nanjing Narong Computer Hanzi Technology Co.Ltd.:All rights reserved</p>
+				<p style="font-size: small;"><a href="http://www.miitbeian.gov.cn/">苏ICP备19023054号</a></p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/hanzi-writer.js"></script>
+		<script type="text/javascript" src="js/dic.js"></script>
+		<script type="text/javascript">		
+		</script>
+	</body>
+</html>

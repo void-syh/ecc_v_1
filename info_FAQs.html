@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>Ecc</title>
+		<link rel="icon" href="favicon.ico" type="image/ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/materialdesignicons.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
+		<style type="text/css">
+			#user {
+				display: none;
+			}
+
+			.CN {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="lyear-layout-web">
+			<div class="lyear-layout-container">
+				<!--左侧导航-->
+				<aside class="lyear-layout-sidebar">
+
+					<!-- logo -->
+					<div id="logo" class="sidebar-header">
+						<a href="index.html"><img src="img/logo.png" title="ECC" alt="ECC" style="width:50%;" /></a>
+					</div>
+					<div class="lyear-layout-sidebar-scroll">
+
+						<nav class="EN sidebar-main">
+							<ul class="nav nav-drawer">
+								<li class="nav-item"> <a href="index.html"><i class="mdi mdi-book-open-page-variant"></i> Ecc Dictionary</a></li>
+								<li class="nav-item"> <a href="products.html"><i class="mdi mdi-format-vertical-align-bottom"></i>Products</a></li>
+								<li class="nav-item"> <a href="aboutUs.html"><i class="mdi mdi-home"></i>About Us</a></li>
+								<li class="nav-item nav-item-has-subnav active open">
+									<a href="javascript:void(0)"><i class="mdi mdi-menu"></i>More Information</a>
+									<ul class="nav nav-subnav">
+										<li> <a href="info_guide.html">Guide</a></li>
+										<li> <a href="info_price.html">Price</a></li>
+										<li> <a href="info_service.html">Products&#38;service</a></li>
+										<li> <a href="info_views.html">Similar Views</a></li>
+										<li> <a href="info_cooperation.html">Cooperation</a></li>
+										<li> <a href="info_solve_problems.html">What_problems_to_solve</a></li>
+										<li class="active"> <a href="info_FAQs.html">FAQs</a></li>
+										<li> <a href="info_Contact.html">Contact Us</a></li>
+									</ul>
+						</nav>
+						<nav class="CN sidebar-main">
+							<ul class="nav nav-drawer">
+								<li class="nav-item"> <a href="index.html"><i class="mdi mdi-book-open-page-variant"></i> Ecc 词典</a></li>
+								<li class="nav-item"> <a href="products.html"><i class="mdi mdi-format-vertical-align-bottom"></i>产品</a></li>
+								<li class="nav-item"> <a href="aboutUs.html"><i class="mdi mdi-home"></i>关于我们</a></li>
+								<li class="nav-item nav-item-has-subnav active open">
+									<a href="javascript:void(0)"><i class="mdi mdi-menu"></i>更多信息</a>
+									<ul class="nav nav-subnav">
+										<li> <a href="info_guide.html">向导</a></li>
+										<li> <a href="info_price.html">价格</a></li>
+										<li> <a href="info_service.html">产品&#38;服务</a></li>
+										<li> <a href="info_views.html">相似观点</a></li>
+										<li> <a href="info_cooperation.html">合作</a></li>
+										<li> <a href="info_solve_problems.html">解决什么样的问题</a></li>
+										<li class="active"> <a href="info_FAQs.html">常见问题解答</a></li>
+										<li> <a href="info_Contact.html">联系我们</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="sidebar-footer">
+							<p class="copyright CN">&copy;2019 南京纳融计算机汉字技术有限公司</p>
+							<p class="copyright EN">&copy;2019 Nanjing Narong Computer Hanzi Technology Co.Ltd.:All rights reserved</p>
+							<p style="font-size: small;"><a href="http://www.miitbeian.gov.cn/">苏ICP备19023054号</a></p>
+						</div>
+					</div>
+
+				</aside>
+				<!--End 左侧导航-->
+
+				<!--头部信息-->
+				<header class="lyear-layout-header">
+					<nav class="navbar navbar-default">
+						<div class="topbar">
+
+							<div class="topbar-left">
+								<div class="lyear-aside-toggler">
+									<span class="lyear-toggler-bar"></span>
+									<span class="lyear-toggler-bar"></span>
+									<span class="lyear-toggler-bar"></span>
+								</div>
+								<span class="EN navbar-page-title"> FAQs </span>
+								<span class="CN navbar-page-title"> 常见问题解答 </span>
+							</div>
+
+							<ul class="topbar-right">
+								<li id="user" class="dropdown dropdown-profile">
+									<div class="EN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span id="username"></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li> <a href=""><i class="mdi mdi-account"></i>Personal Information</a> </li>
+											<li> <a href="forget.html"><i class="mdi mdi-lock-outline"></i>Change Password</a> </li>
+											<li class="divider"></li>
+											<li> <a href="login.html"><i class="mdi mdi-logout-variant"></i>Sign Out</a> </li>
+										</ul>
+									</div>
+									<div class="CN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span id="username_CN"></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li> <a href=""><i class="mdi mdi-account"></i>个人信息</a> </li>
+											<li> <a href="forget.html"><i class="mdi mdi-lock-outline"></i>修改密码</a> </li>
+											<li class="divider"></li>
+											<li> <a href="login.html"><i class="mdi mdi-logout-variant"></i>退出登录</a> </li>
+										</ul>
+									</div>
+								</li>
+								<li id="login">
+									<a href="login.html">
+										<span class="EN"><b>Please Login</b></span>
+										<span class="CN"><b>登录</b></span>
+									</a>
+								</li>
+								<li class="dropdown dropdown-profile" style="margin-right:10px;">
+									<div class="EN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span><b>Language</b></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li class="CN_change"> <a href="#"><i class="mdi mdi-lightbulb"></i> Chinese</a> </li>
+											<li class="EN_change"> <a href="#"><i class="mdi mdi-lightbulb-on-outline"></i>English</a> </li>
+										</ul>
+									</div>
+									<div class="CN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span><b>语言</b></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li class="CN_change"> <a href="#"><i class="mdi mdi-lightbulb-on-outline"></i> 中文</a> </li>
+											<li class="EN_change"> <a href="#"><i class="mdi mdi-lightbulb"></i>英文</a> </li>
+										</ul>
+									</div>
+								</li>
+								<!--切换主题配色-->
+								<li class="dropdown dropdown-skin">
+									<span data-toggle="dropdown" class="icon-palette"><i class="mdi mdi-palette"></i></span>
+									<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+										<li class="drop-title">
+											<p class="CN">主题</p>
+											<p class="EN">Theme</p>
+										</li>
+										<li class="drop-skin-li clearfix">
+											<span class="inverse">
+												<input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+												<label for="site_theme_1"></label>
+											</span>
+											<span>
+												<input type="radio" name="site_theme" value="dark" id="site_theme_2">
+												<label for="site_theme_2"></label>
+											</span>
+										</li>
+										<!--切换主题配色-->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<!--End 头部信息-->
+
+				<!--页面主要内容-->
+				<main class="lyear-layout-content">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="card" style="text-align: center;">
+								<img style="max-height:200px;" src="img/info_FAQs_header.jpeg">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q: What basic knowledge of Chinese characters is needed to learn the Easy Chinese Code™
+													(ECCode™ for short)?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>The basic knowledge of Chinese characters required by mastering the ECCode™ is illustrated as
+													the
+													knowledge structure in the following figure.<br><br>
+													<img src="img/info_FAQS_1_en.jpeg">
+												</h4>
+												<h6 style="text-align: center;">
+													Knowledge Tree of ECCode™
+												</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：学习【汉易码™】都需要用到哪些汉字基础知识？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>掌握【汉易码™】所需的汉字基础知识如下图所示知识结构。<br><br>
+													<img src="img/info_FAQs_1_cn.jpeg">
+												</h4>
+												<h6 style="text-align: center;">
+													【汉易码™】知识树
+												</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Why should the ECCode™ simplify the classification of Chinese character structures? Will this
+													affect foreigners'understanding of the beauty of Chinese characters?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>ECCode™ not only simplifies the structure classification of Chinese characters, but also
+													simplifies the
+													stroke classification of Chinese characters. Among them, the classification of Chinese strokes simplified
+													by ECCode™ is in accordance with the Chinese information processing specifications. Here we no longer
+													explain why the classification of Chinese strokes should be simplified in this way.<br>
+													So， why should ECCode™ simplify the structure classification of Chinese characters? This involves the
+													complexity of a system. Reliability studies show that the complexity of a system is proportional to the
+													number of objects it deals with. That is to say, the more objects a system needs to be categorized and
+													processed, the more complex the system is, and the more difficult it is to learn and master the knowledge
+													about it. For example, there are at least 14 kinds of Chinese character structure according to the
+													traditional classification method, and if the encoding rules are formulated according to the 14 kinds of
+													Chinese character structure, which undoubtedly increases the complexity of the encoding solution. However,
+													ECCode™ only divides the structure of Chinese characters into two categories and four sub-categories,
+													which greatly reduces the complexity of the encoding solution. This is a basic requirement of Chinese
+													character encoding for its learnability.<br>
+													In the same way, according to the stroke classification of the traditional Chinese character theory, there
+													are 26 strokes in hard-pen writing and 78 strokes in brush-writing of regular script. The Chinese
+													Information Processing Standard classifies all Chinese strokes into five basic strokes, and the other
+													strokes are classified into these five basic strokes according to their characteristics. Obviously, this
+													processing method of Chinese information processing standard greatly reduces the complexity of Chinese
+													character encoding solution.<br>
+													In fact, before the advent of the computer, the content of Chinese character teaching and its teaching
+													methods can abide by the the model based on the traditional Chinese character theory which has already
+													formed. However, in the virtual world of the Internet, if Chinese characters want to challenge David
+													Moser's pessimistic assertion of "A Losing Battle (of Chinese characters): The Internet" in his book A
+													Billion Voices: China’s Search for a Common Language, or, in other words, if Chinese language wants to
+													internationalize in the context of the Internet, we must reshape the teaching content of Chinese
+													characters on the premise of maintaining the characteristic attributes of Chinese characters, so as to
+													satisfy the "equal national treatment of Chinese computer" for Chinese and foreign users in the virtual
+													world.<br>
+													For example, if both of a foreign adult Chinese learner who has never lived in China and a Chinese pupil
+													have mastered 500 Chinese characters, Which of them types faster ? Although foreigners may be more skilled
+													in keyboard fingering, they may know the characters "蜂" and "蜜", but they may not necessarily know the
+													meaning of "蜂蜜" and "蜜蜂" because they lack the language environment in which Chinese phrases could
+													naturally accumulate in their lives. Obviously, without the natural accumulation of phrases in the
+													language environment, when foreign Chinese users use Pinyin input method, they will encounter more
+													coincidental codes than Chinese users - they have to use more mouse to select target Chinese characters,
+													which makes their skilled keyboard fingering useless. This is a typical phenomenon of "unequal national
+													treatment of Chinese computer", and it is also an important reason why German Sinologist Professor Andreas
+													Guder calls for the cultivation of Chinese character keywriting ability in teaching Chinese as a foreign
+													language.<br>
+													Therefore, Chinese character teaching in the future should be based on the application of Chinese
+													characters in the two worlds of "virtual and real", and under the condition of no "wiping out" Chinese
+													characters, the Chinese literacy education in the virtual and real world should be guided by a more
+													systematic, non-conflicting theory of Chinese characters based on the unified cognition.
+													As for whether such a unification of Chinese character teaching theories focusing on the two worlds of
+													virtuality and reality will affect foreigners'perception of the beauty of Chinese characters, this need
+													not be worried. Because we have said that this improvement of the traditional Chinese character theory is
+													not a "revolution" or a complete abandonment of the inherent characteristics of Chinese characters, it is
+													just to reconstruct the narrative method while maintaining its inherent characteristics, and to integrate
+													the theory of Chinese character teaching in the virtual and real world, so as to enhance the scientificity
+													of Chinese character theory compared with traditional Chinese medicine theory.<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：【汉易码™】为什么要把汉字结构的种类进行简化？这样会不会影响外国人对于汉字之美的认识？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答 :<br>
+													【汉易码™】不仅对汉字的结构划分进行了简化，而且也对汉字的笔画种类划分进行了简化。其中，【汉易码™】对汉字笔画种类划分的简化符合中文信息处理规范，这里就不再解释为什么要对笔画种类划分做这样的简化处理了。
+													<br>
+													那么，【汉易码™】为什么要对汉字结构的种类划分进行简化呢？这涉及到一个系统的复杂度问题。可靠性研究表明，一个系统的复杂度，与其所要处理对象的种类数量的成正比。也就是说，如果一个系统需要分门别类处理的对象越多，这个系统的复杂度就越高，学习和掌握这个系统的难度就越大。例如，汉字结构依照传统划分方法，至少有14种之多，依照十四种汉字结构分别制定编码规则，那么，这无疑就增加了编码方案的复杂程度了。但是，【汉易码™】只把汉字结构划分为两大类四小类，这就大大降低了编码方案的复杂程度了。这是汉字编码对于易学性的一项基本要求。
+													<br>
+													同样的道理，汉字笔画依照传统汉字理论来划分的话，硬笔书写里面有26种笔画，毛笔楷体书写则多达78种之多，中文信息处理规范却把所有汉字笔画归类为5种基本笔画，其他各种笔画依据其特点而分别归属于这五个基本笔画。显然，中文信息处理规范的这种处理方法大大降低了汉字编码方案的复杂程度。
+													<br>
+													事实上，在计算机没有问世之前，汉字教学内容及其教学方法可以延续传统汉字理论业已成型的模式。但是，在互联网这个虚拟世界里，汉字要想挑战莫大伟（David Moser）在其著作《A Billion Voices:
+													China’s Search for a Common
+													Language》中所言的“互联网：（汉字的）一场失败的战役”之悲观论断，或者反过来说，汉语要想实现互联网背景下的国际化，我们就必须在保持汉字特征属性的前提下，对其教学内容进行重塑，以便满足虚拟世界里面中外汉语用户享有“平等的中文电脑国民待遇”。
+													<br>
+													例如，同样是掌握了500个汉字，一位不曾在中国居住的外国成年汉语学习者和一位中国的小学生相比较，谁打字汉字的速度会更快呢？
+													尽管外国人键盘指法可能更加娴熟，但是，由于他们在生活当中缺乏汉语词组自然积累的语言环境，所以，他们可能认识“蜂”和“蜜”这两个字，却不一定知道“蜂蜜”和“蜜蜂”的含义……。显然，缺乏了词组自然积累的语言环境，外国汉语用户使用拼音输入法时，就会比中国用户更多地遭遇重码的苦恼——他们得更多地用鼠标挑选目标汉字而致使他们娴熟的键盘指法没有了用武之地。这就是典型的“不平等的中文电脑国民待遇”现象，也是德国汉学家顾安达教授呼吁对外汉语教学当中应该重视汉字键写能力培养的一个重要原因。
+													<br>
+													所以，未来的汉字教学，应该立足于“虚实”两个世界的汉字应用，在不“革”汉字“命”的情况下，以更加系统的、彼此不冲突的、统一了认知的汉字理论来指导虚实两个世界的汉语识字教育。
+													<br>
+													至于这样的、着眼于虚实两个世界的汉字教学理论之统一，会不会影响外国人对于汉字之美的认知，这大可不必担忧。因为我们说了，这种对传统汉字理论的改良，不是“革命”，不是彻底抛弃汉字固有的特征属性，而是在保持其固有特征属性情况下的叙述方法的重塑，并把虚实两个世界的汉字教学理论进行一体化设计，借此增强汉字理论较之中医理论更多的科学性。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:How to avoid the phenomenon of "pressing the gourd and floating the ladle" in the design process
+													of the ECCode™?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													The computer encoding solution of Chinese characters is grafted on the English keyboard, which undoubtedly
+													brings a problem, that is, the solution is limited by the keyboard design. In addition, there is no
+													unified measurement standard, which leads to a variety of Chinese character encoding solutions with
+													different focus. Some focus on easy learning and neglect efficiency, such as pinyin encoding method; Some
+													focus on the efficiency of text input and neglect the easy to learn, such as WuBi; Others claim to take
+													into account the above two indicators, but either using the number keys and function keys instead of the
+													English alphabet keys, or using various other keys on the keyboard in addition to the alphabet keys, which
+													highlights the defect of neglecting the probability layout feature of the English keyboard, instead of
+													giving full play to the users' advantage of the skillful fingering of the keyboard in the phonetic
+													language countries.
+													<br>
+													Even because of the various defects of Chinese character keyboard input solutions, some people put the
+													hope of learning Chinese characters by using electronic dictionary for foreigners on various recognition
+													technologies (such as handwriting recognition, scanning recognition...), and want to abandon the keyboard,
+													which foreign people are the most familiar with and is also the best interactive tool for human-computer
+													conversation. However, as the most familiar human-computer interaction tool for foreigners, keyboard has
+													already been an objective existence, so if wanting to assist foreigners to learn Chinese characters and
+													provide a paperless office way for them who take Chinese as working language in the Internet era, it is
+													inevitable for a Chinese character encoding solution to directly face the problem of keyboard application,
+													and avoiding this problem is not the best way.
+													<br>
+													Therefore, we believe that before designing a Chinese character encoding solution, we should first design
+													and develop a set of performance index system to evaluate the merits and demerits of the solution. Only in
+													this way can we avoid the phenomenon of "Each says he is right", so that we can find the best solution
+													under the guidance of a unified evaluation index system and avoid the situation of "being unable to attend
+													to everything at one time ".
+													<br>
+													Of course, before elaborating which performance indexes should be included in the evaluation index system
+													of Chinese character encoding solution, we should also clearly realize that: as a grafting technology, or
+													as a set of rules system created from nothing, it should be an unrealistic dream to master these rules
+													without experiencing the process of learning the rules. However, the complexity or simplicity of the rule
+													system itself is completely in the research scope of this evaluation index system. That is to say, there
+													is no absolute "idiot" rule system in the world; for any new knowledge, if it needs to be applied, it will
+													always take a little time for people to learn and master it.
+													<br>
+													In fact, after comprehensive research, we found that a set of scientific encoding evaluation performance
+													index system for Chinese characters should at least include the following aspects:
+													<br>
+													1.Learnability: that is to say, the rules are simple, easy to remember and not easy to forget; suitable
+													for foreigners having learnt Chinese for three or four months;
+													<br>
+													2.Few encoding rules, easy to master；
+													<br>
+													3.Low rate of coincidental codes: it's the best that the rate of coincidental codes is lower than Wubi,
+													and the typing speed is faster;
+													<br>
+													4.Good standardization, no conflict between rules: For example, on the one hand, the traditional Chinese
+													character theory emphasizes the rules of stroke order, on the other hand, it tells foreign Chinese
+													learners that there is a radical "囗" in the character "国" and a radical "匚" in the character "区"; However,
+													when foreigners learn to write these two Chinese characters correctly, they cannot write out these two
+													radicals according to the rules of stroke order; This is not only the place where the traditional Chinese
+													character theory must make itself more systematic, scientific and need to improve its content in order to
+													cater to the information processing of Chinese characters, but also the place where the Chinese character
+													information encoding solution must respect the rules of stroke order;
+													<br>
+													5.High input efficiency: Not only must have the very high typing speed, also must have the very high input
+													accuracy rate -- i.e. must have the very low ratio of mistyping;
+													<br>
+													6.Psychological rules suitable for Chinese characters writing: The order of Chinese characters' appearing
+													in mind is "first sound, then shape, they are a whole";
+													<br>
+													7.Suitable for the habit of "blind typing": Aiming at the mainstream application scenarios of Chinese
+													character information processing, it is better to use only letter keys instead of various function keys
+													and number keys in Chinese character encoding solution;
+													<br>
+													8.Follow the principle of probability layout: Abide by the probability layout principle of each letter key
+													in the keyboard design, and lay the foundation of key position structure for efficient typing.
+													<br>
+													Considering the comprehensive consideration of the above eight aspects, the ECCode™ avoids the phenomenon
+													of "pressing the gourd and floating the ladle" to the greatest extent.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：【汉易码™】设计过程当中如何避免了“摁下葫芦浮起瓢”这种现象？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													汉字的计算机编码方案是嫁接在英文键盘之上的，这就毫无疑问地带来了一个问题，那就是这种解决方案受到了键盘设计的局限。再加上没有统一的衡量标准，这就导致出现了各种各样着眼点不同的汉字编码方案了。有的着眼于易学而忽视了效率，例如拼音编码方案；有的着眼于文字输入效率而忽视了易学性，例如五笔字型；还有的自称兼顾上述两种指标、但却要么不用英文字母键而使用数字键和功能键，要么就是在字母键之外还使用了键盘上的各种其他键，从而凸显了其忽视英文键盘的概率布局特征之缺憾，反而无法发挥拼音语言国家的人键盘指法娴熟的盲打优势。
+													<br>
+													甚至因为汉字键盘录入的种种缺陷，而导致有些人把适合外国人利用电子字典学认汉字的希望寄托于各种识别技术了（例如手写识别、扫描识别……）、却想要彻底抛弃键盘这个外国人最熟悉的、人机对话最佳的交互工具了。但是，键盘作为外国人最熟悉的人机交互工具，已经是一种客观存在了，辅助外国人学认汉字以及互联网时代为外国汉语用户提供无纸化办公的手段，都不可避免地需要汉字编码直面键盘应用的难题，而回避这个问题则不是上上之策。
+													<br>
+													所以，我们认为，在设计一个汉字编码方案之前，首先应该设计和制定一套评价汉字编码方案优劣的性能指标体系。只有这样，才能避免“公说公有理婆说婆有理”这个现象，使大家在一个统一的评价指标体系的引领之下寻得最佳的解决方案，从而避免了“顾此失彼”。
+													<br>
+													当然，在阐述汉字编码评价指标体系究竟应该包含哪些性能指标之前，我们还应该清楚地认识到：作为一项嫁接技术，或者说，作为一套凭空创建的规则体系，想要不经历学习规则的过程就可以“零基础”地掌握这些规则，这应该是不现实的一种梦想。而规则本身的复杂或简单程度，则完全是这个评价指标体系的研究范围。
+													也就是说，世界上没有绝对的“傻瓜式”的规则体系；对于任何新知，如果需要加以应用这种新知，那么总是需要人们付出一点时间去学习和掌握。
+													<br>
+													实际上，经过综合研究，我们发现，一套科学的汉字编码评价性能指标体系至少应该包括以下几个方面：
+													<br>
+													1.易学性：就是说，规则简单，易于记忆，不易忘记；适合初学汉语三四个月的外国人学习、掌握;<br>
+													2.编码规则少，易于掌握； <br>
+													3.低重码率:最好重码低于五笔字型，打字速度快；<br>
+													4.规范性好，规则之间不冲突：例如传统汉字理论一方面强调笔顺规则，另一方面又告诉外国汉语学习者“国”字里面有个部首“囗”
+													、“区”字里面有个部首“匚”；但是，当外国人学习正确书写这两个汉字时，却依照笔顺写不出这两个部首来。这既是传统汉字理论为了迎合汉字信息化处理而必须使自己更加系统、科学、需要改良其内容阐述的地方，也是汉字信息编码方案必须尊重笔顺规则的地方。<br>
+													5.输入效率高：既要有很高的打字速度，也要有很高的输入正确率——即要有很低的打错字比率;<br>
+													6.适合汉字书写的心理学规律：汉字在脑海中复现的秩序是“先音后形，音形一体”；<br>
+													7.适合“盲打”习惯:以汉字信息处理的主流应用场景为目标，汉字编码方案最好只用字母键，而不要使用各种功能键和数字键;<br>
+													8.概率布局原则:遵守键盘设计当中各个字母键位的概率布局原则，为高效打字奠定键位结构基础。 <br>
+													鉴于上述八个方面的综合考虑，【汉易码】就在最大限度上避免了“摁下葫芦浮起瓢”的现象之发生。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Has TCFL really met the needs of Chinese application in the Internet era?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Acturally, this question can also be asked, "In the age of the Internet,
+													what other aspects of TCFL need to be improved so as to keep pace with the times?"<br>
+													As we all know, in the real world, the cultivation and application of Chinese ability are mainly reflected
+													in the
+													four aspects of Chinese listening, speaking, reading and writing. However, the emergence of the Internet
+													has
+													changed this situation, especially for the foreigners who study and use Chinese, because 99.5% of them
+													lack the
+													Chinese language environment in which Chinese vocabulary could accumulates naturally, which makes it more
+													difficult
+													for these people to apply Chinese in the virtual world. That's why David Moser, an American Sinologist,
+													came to the
+													pessimistic conclusion that Chinese langauge was "losing the battle of languages" in the Internet" (See
+													Chapter 15
+													"A Losing Battle: The Internet" in A Billion Voices: China's Search For A Common Language by David Moser).<br>
+													In fact, in the face of the virtual world of foreigners' Chinese learning and application, the biggest
+													difficulty
+													of TCFL is that the efficiency of searching electronic dictionaries is insurmountable. For example, when
+													an Arab
+													learns German, he can master German letters and phonetic symbols in two months. After that, he can
+													independently
+													and efficiently search for new German words in any time and space. However, it also took him two or three
+													months to
+													master the Chinese Pinyin, the basic strokes of Chinese characters and some common radicals of Chinese
+													characters,
+													it didn't mean that he had the convenience of Dictionary inquiry for learning new Chinese characters.<br>
+													<img src="img/info_solve_TomDict_en.jpg">
+													To thicken the broth further, Tom in the picture above who was studying Chinese language did not know the
+													character
+													"李", and no one around him could tell him how to pronounce the Chinese character "李", or what its pinyin
+													is,
+													furthermore, he hasn't mastered the Chinese character query method such as stroke (According to David
+													Moser [莫大伟]in
+													his article "Why Chinese Is So Damn Hard" complaining foreigners learning Chinese character dictionary
+													query
+													method, just like learning a time consuming art)···. That is to say, Tom in the picture can't input the
+													new
+													character "李" into the e-dictionary at this time. In fact, just at this very time, Pinyin has lost any
+													value to
+													Tom! And the significance of modern science and technology for teaching foreigners to master the correct
+													writing of
+													Chinese characters has disappeared.<br>
+													Therefore, as far as the current teaching of TCFL is concerned, its task setting is far from meeting the
+													needs of
+													foreigners in the Internet era for all-round application of Chinese. Specifically, it can't satisfy the
+													interactive
+													application of foreign users of Chinese language between the "virtual and real world". Considering that
+													foreigners
+													are most familiar with the application of keyboard, and keyboard is also the most convenient and cheap
+													human-computer interaction tool so far, Chinese character keylearning and keywriting based on keyboard is
+													an urgent
+													problem to be solved in the future teaching Chinese as a foreign language.<br>
+													In short, the future TCFL should be based on new technology and new invention, and expand the four aspects
+													of
+													listening, speaking, reading and writing in TCFL to five aspects of listening, speaking, reading, writing
+													and
+													keytyping. In this way, it can bear the great expectation of foreign Chinese learners and users for the
+													comprehensive application of Chinese in the Internet era.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：目前对外汉语教学真正满足了互联网时代的汉语应用需求了吗？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													其实，这个问题也可怎么问，“在互联网背景下，目前的对外汉语教学还有哪些方面需要做与时俱进的完善呢？”<br>
+													众所周知，在现实世界里，汉语能力的培养及其应用主要体现在汉语的听说读写这四个方面
+													。但是，互联网的出现改变了这种状况。尤其是对于学习和使用汉语的外国人来说，由于他们当中99.5%的人缺乏汉语词汇自然积累的汉语语言环境，这就使得这部分人群在虚拟世界中的汉语应用更加地困难。也正因为如此，美国汉学家莫大伟（David
+													Moser）才得出了汉语正在“落败于互联网”这个悲观的结论（参见莫大伟著作<a href="https://www.penguin.com.au/books/billion-voices-china-s-search-common-language-9780734399595">《A
+														Billion Voices: China's Search for a Common Language》的第十五章“A Losing Battle: The Internet”</a>）。
+													<br>
+													实际上，目前对外汉语教学面对外国人虚拟世界的汉语学习和应用时，其最大的困境就在于查询电子字典的效率障碍难以逾越。例如，一个阿拉伯人学习德语，他可以用2个月的时间掌握德语字母和音标，并在此之后，他就可以独立、高效地在任何时空下查询德语新单词了。但是，同样是花费两三个月的时间，在他熟练掌握了汉语拼音和汉字基本笔画以及一些常有的汉字偏旁部首之后，他并不享有这种汉字生字学习的字典查询之便利性。
+													<br>
+													<img src="img/info_solve_TomDict_cn.jpg">
+													具体点说，图中的Tom遇到了这个“李”字不认识，身边又没有人能够告诉他这个汉字“李”应该如何发音、或者其汉语拼音字母是什么——他还没有掌握诸如笔画一类的汉字查字法（据莫大伟[David Moser]在其文章<a
+													 href="http://www.pinyin.info/readings/texts/moser.html">《Why
+														Chinese Is So Damn Hard?》</a>中吐槽外国人学习汉字字典查询方法，就如同在学习一门艺术一样极其耗费时间）……，也就是说，此时图中的Tom没有办法把这个生字“李”输进电子字典里面。每当这个时候，汉语拼音对于Tom来说，就失去了任何价值！而现代科技对于教授外国人掌握汉字正确书写的意义也荡然无存了。
+													<br>
+													所以，就目前的对外汉语教学而言，其任务设定远不能满足互联网时代外国人对于汉语全方位应用的需求。具体地说，就是不能满足外国汉语人口在“虚实两个世界”的交互应用。考虑到外国人最熟悉键盘的应用，同时键盘也是迄今为止最为便利廉价的人机交互工具，因此，基于键盘的汉字键学和键写就是未来对外汉语教学不得不面对的一个亟待解决的问题。
+													<br>
+													总之，今后的对外汉语教学应该在立足新技术新发明的基础之上，把对外汉语教学当中的听说读写四个方面拓展到听说读写键五个方面。这样才能承载起互联网时代外国汉语学习和应用者对于汉语全面应用的厚望。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:How to think the price of ECCode™ software is expensive or cheap?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Obviously, the question of whether ECCode™ software is expensive or cheap should be measured in terms of
+													the total cost of achieving the Chinese learning objectives. If a tool can give full play to the learner's
+													initiative and make it convenient to have the chance to achieve the task goal of Chinese vocabulary which
+													traditionally takes several decade months to master in a few months, then compared with the cost of
+													traditionally achieving the task goal of this kind of vocabulary, do you think the price USD 100 of
+													ECCode™ Software is expensive or cheap? And the answer is obviously self-evident.
+													<br>
+													In fact, the idea of ECCode™ is that it neither wants to make learning new Chinese characters more
+													difficult than learning new words of other alphabetic languages, which actually has already made learning
+													Chinese become a marathon competition, nor does it want learning Chinese to become a "noble" activity. It
+													is better for Chinese learners to easily use the same tool, for example a keyboard, to look up new Chinese
+													characters in an e-dictionary as they use it to look up new words of alphabetic languages in an
+													e-dictionary. In this way, Chinese learning could no longer be radically different from learning other
+													languages in terms of information tool using.
+													<br>
+													In a word, the wish of ECCode™ is to let Chinese language enjoy "Equal National Treatment of Computer" in
+													front of information equipment and let foreigners fully feel Chinese Power Made Easy!
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：如何看待ECCode软件的价格是贵还是便宜?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													如何看待ECCode™软件的价格是贵还是便宜这个问题，显然要从汉语学习目标达成的总成本方面来衡量。如果一种工具能够充分发挥学习者的主观能动性、让其很方便地有机会在几个月里面就能够达到传统上需要几十个月才能掌握的汉语词汇量之任务目标，那么与传统上达成这种词汇量的任务目标所付出的成本比较，您说ECCode™软件100美元的这个定价是贵了呢，还是便宜了呢？显然，答案不言而喻。
+													<br>
+													实际上，ECCode™的想法是：既不想让学习汉语生字比学习其他拼音语言的新单词更难而导致学习汉语成为了一项马拉松比赛，也不想让学成汉语成为一项“贵族”活动。最好是用户查学拼音语言的新单词使用什么工具（例如键盘），那么他们就用什么工具方便地查学汉语生字。这样,在信息设备的使用方面，就可以让汉语学习不再迥异于其他语言的学习了。
+													<br>
+													总之，ECCode™的愿望就是让汉语在信息设备面前享受到“平等的电脑国民待遇”，让外国人充分感受到"汉语能力养成挺轻松"!
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Would foreign Chinese learners like to spend time remembering the Chinese Letter Table of ECCode™?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													This is an interesting question. While the motivation to learn Chinese is still strong at an initial
+													stage, if memory work is like a sprint rather than a marathon, then many people will be willing to spend
+													some time to memorize the Chinese Letter Table of ECCode™ based on the common sense of "Haste makes
+													waste".
+													<br>
+													As to the question raised by many Chinese teachers, an Italian female student from Capital Normal
+													University, after listening to the lecture of ECCode™, made a good answer with her experience of learning
+													to play piano when she was a child.
+													<br>
+													She explained:
+													<br>
+													In order to remember which piano key position in the music score each finger corresponds to, at that time,
+													the teacher had to paint children's fingernails in various colors in a very troublesome way to facilitate
+													memory. Although this method is very troublesome, it can make children remember the corresponding
+													relationship between fingers and piano keys quickly, which speeds up the their mastery of piano fingering.
+													So it's the same thing to spend some time memorizing the Chinese Letter Table of ECCode™, so that Chinese
+													learners can independently learn Chinese characters faster and expand their Chinese vocabulary quickly in
+													short time.
+													<br>
+													Listen, how well she said it! After listening to her explanation, as the author who doesn't want to
+													"boast", my suspended heart finally falls to the ground. After all, "Cat Tom cann't take the place of
+													Mouse Jerry to explain her attitude towards the problem that only she would encounter"!
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：外国人会愿意花时间记亿ECCode™汉字字母表吗？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													这是一个很有意思的问题。在学习汉语的动机尚处强烈的起始阶段，如果记忆工作犹如短跑而不是马拉松，那么相信很多人会基于“欲速不达”的常识而愿意花点时间记忆ECCode™的汉字字母表的。
+													<br>
+													对于很多中国老师提出的这个疑问，首都师范大学的一位意大利女学生在听了ECCode™的讲座之后，用她自己小时候学弹钢琴的经历做了很好的回答。
+													<br>
+													她解释道：
+													<br>
+													为了记住每个手指对应乐谱中的哪个钢琴键位，那时老师不得不每次很麻烦地把孩子们的手指甲涂成各种不同的颜色，以方便记忆。虽然这种方法很麻烦，但却能够让孩子们很快记住手指与钢琴键位的对应关系，这就加快了孩子们掌握钢琴指法的速度了。所以
+													花点时间记忆ECCode™汉字字母表，也是同样的道理，这样就可以方便汉语学习者更快地自主学习汉字、在短时间内快速扩大汉语词汇量了。
+													<br>
+													大家听听，她说得多好！听了她的解释，作为不想“自卖自夸”的笔者，我悬着的一颗心总算落了地。毕竟，“汤姆猫怎么能够代替杰瑞鼠来解答鼠类才会遇到的问题之感受呢”！
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Is Chinese character KEYLEARNING and Chinese culture teaching contained in Chinese characters
+													contradictory?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Some teachers of Chinese as a foreign language always feel that the method of "Chinese character
+													keylearning" based on keyboard, which disassembles Chinese characters to achieve the purpose of inputting
+													them into an information equipment, can not achieve the effect of "face-to-face teaching of Chinese
+													characters", which can spread the excellent Chinese culture hidden behind Chinese characters through the
+													explanation of them. Based on this doubt, they seem to have some resistance to the modern,simple, and
+													convenient way of Chinese character keylearning.
+													<br>
+													So, is there a contradiction between Chinese character keylearning and the teaching of Chinese culture
+													contained in Chinese characters?
+													<br>
+													To answer this question, we'd better take a look at how about the spread of Chinese culture (stories,
+													sayings...) hidden behind Chinese characters having gone before the invention of keylearning. We can try
+													to ask the Chinese around us to see how many people know:
+													<br>
+													●Why the Chinese character "富" is composed of ["宀"+"一"+"口"+"田"];
+													<br>
+													●Why the Chinese character "休" is composed of ["亻"+"木"];
+													<br>
+													●Why the Chinese character "穷" or "窮"is composed of ["穴"+"力"] or ["穴"+"身"+"弓"];
+													<br>
+													●......
+													<br>
+													In fact, the results of such surveys are not satisfactory. Perhaps when the respondents were learning
+													these Chinese characters, their teachers might have introduced the "Formation of Chinese Characters" of
+													hieroglyphs and the Chinese philosophy hidden behind them in class. However, in daily life, people usually
+													use their literal meanings more often and forget the stories and culture hidden behind these characters.
+													<br>
+													It can be seen that any test mentioned above can reveal the difficulties of teaching Chinese culture
+													hidden behind Chinese characters, which existed for a long time before the advent of Chinese keylearning
+													method.
+													<br>
+													Okay,another question comes: the emergence of the technology of Chinese character keylearning has
+													aggravated the difficulty of spreading the cultural and philosophical thoughts carried by Chinese
+													characters, or has it eased or even effectively solved this difficulty?
+													<br>
+													We know that before the emergence of Chinese character keylearning technology, there were many animation
+													resources or text materials on the Internet to introduce the cultural background story or Chinese
+													philosophy hidden behind Chinese characters. However, on the one hand, due to the fragmentation of these
+													resources, there isn't any e-dictionary covering the content from the meaning interpretation of the
+													Chinese characters to the thoughts and culture hidden behind them; on the other hand, the more critical
+													problem is that there is no efficient and convenient way for foreigners who are just learning Chinese to
+													put the Chinese characters they don't know or can't read into the electronic dictionary, so that they
+													cannot make full use of this kind of dictionaries containing Chinese cultural and philosophical thoughts.
+													In fact, this is the two indispensable aspects of Chinese cultural communication. In particular, if the
+													second problem is not well solved, even if the first problem is solved, it is only a low-efficiency way of
+													cultural communication which gets half the result with twice the effort. On the contrary, as for the
+													foreign Chinese learners, if the problem of Chinese character input and retrieval in the electronic
+													dictionary has been solved well, it will lay a technical foundation for the efficient use of the
+													electronic dictionary which includes the spread of Chinese culture and philosophical thoughts.
+													<br>
+													Therefore, we can judge from this that the emergence of Chinese keylearning technology will certainly
+													promote the internationalization of Chinese and the spread of Chinese culture carried by Chinese
+													characters.
+													<br>
+													In fact, even for us Chinese, we can also ask sucha a question: among today's educated people, why is the
+													proportion of people who master the Chinese culture and thought contained in Chinese characters far lower
+													than that of 70-80 years ago?!
+													<br>
+													In fact, it has both the negative effect of simplification of Chinese characters and the result of the
+													invisible hand of pragmatism operating in the dark. Especially when the pace of life becomes faster,
+													people generally cherish their time like gold, and strive for the short-term "yield rate" of time
+													investment, many people are often satisfied with knowing the meaning of Chinese characters and are not
+													willing to spend more time to understand why it is "this meaning", i.e., people tend to only seek
+													"results" instead of "causes", only seek to know what it is but not want to know why it is.
+													<br>
+													However, we can imagine:
+													<br>
+													If it is easy to understand the culture and philosophical thoughts hidden behind the Chinese characters,
+													and it can be easily accessible by using fragmented time, without the need to set up face-to-face teaching
+													courses with restricted range of target audience in a specific place at a specific time, what kind of
+													attitude will people have towards the culture and philosophical thoughts hidden behind the Chinese
+													characters which could help them to improve their personal accomplishment?
+													<br>
+													Obviously, if the "marginal benefit" of this fragmented time investment is very considerable, then
+													foreigners learning Chinese will also be willing to make some investment in language learning with a
+													higher cost-effectiveness ratio.
+													<br>
+													In a word, the Chinese character keylearning is not contradictory to the teaching of Chinese culture
+													contained in Chinese characters. On the contrary, people can make full use of the advantages of
+													information technology to promote the spread of Chinese culture carried by Chinese characters.
+													<br>
+													For example, after Chinese characters are easily keywritten into an Encyclopedia of Chinese characters in
+													the future- (only when Chinese characters are input into the computer can computer technology be used to
+													learn them; therefore, this step is a very important), they can watch the animation interpretation of
+													Chinese culture and philosophical thoughts hidden behind the Chinese characters anywhere and anytime.
+													<br>
+													There is no doubt that compared with the "face-to-face teaching" method with a small audience, the way of
+													Chinese character keylearning has more advantages in the use of time and space, and can promote the
+													dissemination of Chinese culture contained in Chinese characters more in depth and breadth.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：汉字键学与教授蕴藏在汉字里面的中华文化相矛盾吗？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													有对外汉语教师总感觉着基于键盘的、把汉字拆解开来以达到输入信息设备目的的“汉字键学”方法，无法实现“面授汉字”所能达到的、借由汉字讲解来传播蕴藏在汉字背后的优秀中华文化之效果。基于这种疑惑，他们似乎对汉字键学这种现代化的汉字学习的简便方法始终抱有着某种抵触情绪。
+													<br>
+													那么，汉字键学与教授蕴藏在汉字里面的中华文化之间是相互矛盾的吗？
+													<br>
+													要想回答这个问题，我们最好先来看看在汉字键学方法问世之前，蕴藏在汉字背后的中华文化（故事、说法……）的传播情况怎么样吧。我们可以尝试着问问身边的中国人，看看有多少人知道：
+													<br>
+													●为什么“富”字是由【“宀”+“一”+“口”+“田”】组成的？
+													<br>
+													●为什么“休”字是由【“亻”+“木”】组成的？
+													<br>
+													●为什么“穷”或者“窮”字是由【“穴”+“力”】或者【“穴”+“身”+“弓”】组成的？
+													<br>
+													●……
+													<br>
+													实际上，这种调查的结果不会令人满意。也许被调查者当初在学习这些汉字的时候，他们的老师可能在课堂上介绍过象形文字的“造字法”及其背后所蕴藏的中国哲学思想。但是，在日常生活当中，人们更多地是用其字面释义而往往忘记了蕴藏在这些汉字背后的故事和文化。
+													<br>
+													可见，随便做一个上述所言的测试，就可以发现，教授汉字背后蕴藏的中华文化之困难，早在汉字键学方法问世之前就存在很久了。
+													<br>
+													那么，汉字键学技术的出现，是加重了汉字所承载的文化和哲学思想的传播困难了呢，还是缓解甚至有力地解决了这种困难？
+													<br>
+													我们知道，在汉字键学技术出现之前，网络上已经有很多动画资源或文字资料在介绍汉字所承载的文化背景故事或中国哲学思想了。但是，一方面由于这些资源的碎片化而没有在一本汉字字典当中揽括从字意解释到汉字所承载的思想文化方面的内容；另一个方面则更为关键的问题就是没有一种高效的、方便初学汉语的外国人把他不认识、不会读的汉字弄进电子字典的方法，使得他能够很方便地充分利用这种汉字文化思想字典。实际上，这是汉字文化传播不可缺少的两个方面的问题。尤其是第二个问题如果没有很好地得到解决的话，即使是解决了前面第一个问题，也只是事倍功半的一种低效率的文化传播方式。与之相反，对于学习汉语的外国人来说，如果汉字在电子字典当中的输入检索问题很好地得到了解决，那么，就为揽括了汉字文化思想传播的电子字典之高效的利用奠定了技术基础了。
+													<br>
+													所以，我们可以由此判断，汉字键学技术的出现，必将在促进汉语国际化的同时也将有助于促进汉字所承载的中华文化的传播。
+													<br>
+													其实，即使是针对我们中国人，也可以问问，为什么在今天的受教育者当中，掌握汉字蕴藏的中华文化思想的人数之比例要远远低于七八十年前呢？！
+													<br>
+													实际上，这既有简化字的负效应，也有实用主义这个“看不见的手”在暗中运作的结果。尤其是在生活节奏变得更快、人们普遍惜时如金、更强求时间投入的短期“收益率”的情况下，很多人也就往往只满足于知道汉字的意思而不愿意花更多的时间去了解为什么是“这个意思”了，即人们往往只求“果”而不求“因”、只求知其然而不想知其所以然了。
+													<br>
+													但是，我们可以设想一下:
+													<br>
+													如果了解汉字背后蕴藏的文化和哲学思想很容易、利用碎片化的时间即可触手可及、而无需在特定的时间去特定的地点开设受众面大受制约的“面授”课，那么，人们对于提高个人修养的、蕴藏在汉字背后的文化和哲学思想又会是一种什么样的态度呢？
+													<br>
+													显然，如果这种碎片化的时间投入的“边际效益”十分可观，那么学习汉语的外国人也会乐于为“费效比”更高的语言学习方面做点投入了。
+													<br>
+													总之，汉字键学不但与教授蕴藏在汉字里面的中华文化不矛盾。相反，人们还可以充分利用信息技术的优势来促进汉字所承载的中华文化的传播。例如，在未来把汉字便捷地键写进汉字大百科全书之后——（只有把汉字输进电脑了才能利用电脑技术学习汉字;所以说这是非常重要的一步），就可以随便观看有关汉字背后蕴藏的中华文化之动画诠释了。这种方法，比起受众面极小的“面授”方式来说，在时间和空间的利用方面则更具优势，更能在深度和广度上促进汉字所载中华文化的传播工作。
+													<br>
+													总之，汉字键学不但与教授蕴藏在汉字里面的中华文化不矛盾。相反，人们还可以充分利用信息技术的优势来促进汉字所承载的中华文化的传播。
+													<br>
+													例如，在未来把汉字便捷地键写进汉字大百科全书之后——（只有把汉字输进电脑了才能利用电脑技术学习汉字;所以说这是非常重要的一步），就可以随便观看有关汉字背后蕴藏的中华文化之动画诠释了。
+													<br>
+													毫无疑问，比起受众面极小的“面授”方式来说，汉字键学这种方法在时间和空间的利用方面则更具优势，更能在深度和广度上促进汉字所载中华文化的传播工作。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">Q:What is the encoding process of ECCode™?</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>The reason why ECCode™ is simple is that it has a strict flow path to compile the code of a
+													Chinese character. General users can master the principle of Chinese character encoding of ECCode™ with a
+													little practice. The following is a flow chart of the encoding of ECCode™. As for the specific encoding
+													method, please choose a corresponding Starter Tutorial according to your knowledge background of Chinese
+													characters (referring to <a href="products.html">"Download Starter
+														Tutorials of Keylearning and Keywriting for Chinese Characters"</a>).<br><br>
+												</h4>
+												<img src="img/info_FAQs_2_en.jpeg">
+												<h6 style="text-align: center;">
+													Encoding Flow Chart of ECCode™
+												</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">问：【汉易码™】的编码流程是什么？</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4>
+													答:<br>【汉易码™】之所以简单，就是其对汉字代码的编制有严格的流程可循。一般用户稍加练习，即可掌握其汉字编码原理。下图是【汉易码™】编码的流程图。具体编码方法请根据自己的汉字知识背景情况选择不同的入门教程（参见<a
+													 href="products.html">《汉字键学与键写入门教程下载》</a>）。<br><br>
+												</h4>
+												<img src="img/info_FAQs_2_cn.jpeg">
+												<h6 style="text-align: center;">【汉易码™】编码流程图</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Why should the concept of "letters" of Chinese characters be introduced in the course of ECCode™?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													According to Stephen D. Krashen 's "The input hypothesis" theory, we believe that when foreigners have no
+													conceptual awareness of Chinese characters, the first shortcut in learning Chinese characters is to shape
+													their initial understanding of Chinese characters by analogy with the help of their understanding of their
+													mother tongue. Meanwhile, through this understanding of the first impression of Chinese characters, the
+													foreign Chinese learners can get the basis of Chinese character learning in the future, i.e. get the
+													initial value of "i" in Stephen Krashen's "i+1" theory ---- "i" is the existing value of Chinese literacy
+													capacity, which is the basis for their further mastery of Chinese characters in the future.
+													<br>
+													Everybody knows that the foundation of an alphabetic language is the letters that make up the words. This
+													is the knowledge that every person who learns such a language should learn and master. Therefore,
+													borrowing the concept of "letters" is to make the learners of the ECCode™ understand that the constituents
+													of Chinese character codes are equivalent to the letters of a word in the alphabetic language and there
+													are Chinese 103 "letters", namely correspongding to 103 shape constituents, located respectively on the 26
+													English letters (Called "The key mapping table of shape constituents (“letters”) of Chinese characters in
+													ECCode™"). In fact, 84.46% of the Chinese character "letters" are easy to remember by means of two rules
+													of memory, and there are no more than 15 key places of shape constituents in the ECCode™ that require a
+													little time to memorize (See <a href="products.html">Starter
+														Tutorials</a> for details).
+													<br>
+													When our product lecturer gave a lecture to teachers of Chinese as a foreign language in a university to
+													introduce the way of using ECCode™ to "keylearn" Chinese characters, many Chinese teachers on the spot are
+													questioning the defect of ECCode™ that it can't make foreign Chinese learners look up e-dictionaries like
+													a dummy with zero basis. As an introducer, the lecturer is also worried about this question. After all, we
+													can not answer this question on behalf of foreign Chinese learners.
+													<br>
+													Fortunately, an Italian female student from the perspective of foreigners at the lecture site answered the
+													question asked by the teachers that the ECCode™ is not for dummies with zero basis of Chinese characters.
+													She explained with her own experience of learning to play the piano as a child: "It is like learning the
+													piano. There's a quick way of teaching kids how to read the notes on sheet music that is coloring each one
+													of them with different colors. The students will remember which color represents which note, and that's
+													it. Although it is troublesome to paint nails with different colors, this method leads to the rapid
+													mastery of piano fingering." What she meant was that taking time to remember these Chinese "letters" was
+													beneficial to the rapid expansion of Chinese vocabulary in the later period, and it was worth it.
+													<br>
+													Her comments not only relieve the questioned lecturer, but also inspire us greatly from foreign Chinese
+													learners.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：【汉易码™】教程当中为什么要引入汉字“字母”概念？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>根据斯蒂芬·克拉申 的“输入假说”
+													理论，我们认为，在外国人对于汉字还处于没有任何概念意识的情况下，汉字学习的最初始捷径就是借助于他们对于母语的理解，通过类比的方法来塑造他们对于汉字的最初认识。同时，通过这种对汉字的第一印象之认识，外国汉语学习者可以获得今后学习汉字的基础，即获得斯蒂芬·克拉申“i+1”理论当中那个最初始的“i”值——既有基础水平值，这是他们今后进一步掌握汉字的基础。
+													<br>
+													众所周知，拼音语言的基础就是其构成单词的字母，这是每个学习拼音语言的人都要学习和掌握的知识。因此，【汉易码™】借用“字母”的概念，就是要让【汉易码™】的学习者理解到这么一点，那就是汉字代码的组成成份就相当于构成拼音语言里面单词的字母。这些字形“字母”一共有103个，分别被放置在26个英文字母键上（被称之为“字形键位表”）。其中，84.46%的汉字字形“字母”借助于记忆规律很容易被记住。实际上，需要花点时间记忆的汉字字形“字母”的键位位置只有不超过15个（具体细节请参见<a
+													 href="products.html">【入门教程】</a>）。
+													<br>
+													当我们的产品讲师在一个大学给对外汉语教师做讲座介绍利用【汉易码™】键学汉字时，很多中国汉语老师反倒是质疑【汉易码™】的缺陷是“没有傻瓜到零基础就可以查字典”了。对此，作为介绍方，演讲者也有点忐忑不安——毕竟我们不能代表外国汉语学习者来回答这个质疑啊！
+													<br>
+													好在，讲座现场有位意大利女学生站在外国人的角度回答了那些老师质疑“【汉易码™】不是傻瓜到零基础就可以查字典”的这个问题。她用她自己小时候学习弹钢琴的经历解释道：“这就像学钢琴。有一种教授孩子们如何阅读乐谱上音符的快捷方法，那就是给每个指甲标记不同的颜色。学生只需记住哪个颜色代表哪个音符，就万事大吉了。虽然给指甲涂上不同的颜色有点麻烦，但这有利于孩子们快速掌握钢琴指法。”
+													她的意思是花点时间记住这些中文“字母”有利于后期快速地扩大汉语词汇量，值得。
+													<br>
+													她的这番评论，既让那位提出质疑的讲师释怀了，也使我们受到了源自外国汉语学习者的极大鼓舞。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:How to improve the ability of Chinese-character Keywriting quickly?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													As the saying goes, "if you want to speed up, you can't reach it", the same is true for improving the
+													keywriting ability of Chinese characters.
+													<br>
+													In order to improve the ability of Chinese keywriting, you need to know which factors restrict the
+													improvement of Chinese keywriting ability. Obviously, the improvement of Chinese character keywriting
+													ability is restricted by the following three aspects:
+													<br>
+													1. The number of Chinese vocabulary;
+													<br>
+													2. The performance of Chinese character keywriting tool software;
+													<br>
+													3. User's proficiency in keyboard fingering.
+													<br>
+													For many Chinese learners in or from alphabetic language countries, the third factor mentioned above is
+													not the main obstacle to the improvement of Chinese keywriting. Therefore, for foreign Chinese users, how
+													to quickly expand the Chinese vocabulary is the most critical factor to improve the ability of Chinese
+													keywriting; and how to choose a tool software of Chinese character inputting with the best performance
+													index is a secondly important factor.
+													<br>
+													However, there is a problem that is easy to be ignored: Should you wait until the Chinese vocabulary have
+													been accumulated to a certain extent before you practice to improve the ability of Chinese keywriting, or
+													should you use a Chinese keywriting tool to help expand the Chinese vocabulary quickly? In other words, is
+													it possible that the earlier the Chinese keywriting tool can help expand the Chinese vocabulary, the
+													better? Obviously, the answer is self-evident: it's of course that the earlier the Chinese keywriting tool
+													can help expand the Chinese vocabulary, the better! So, only the solution that can take the two factors
+													into account is the best solution to improve the ability of Chinese character keywriting.
+													<br>
+													But in this way, we have to face the problem of "more haste, less speed" again. That is to say, if you
+													want to make full use of information technology based on keyboard to rapidly expand the Chinese
+													vocabulary, and naturally improve the Chinese character keywriting ability in the process of Chinese
+													character keylearning, then you have to seriously learn the Easy Chinese Code™ (ECCode™), a Chinese
+													character encoding method. This so-called "slow" is to be more "fast".
+													<br>
+													Specifically, in order to better improve the Chinese character keywriting ability, we suggest that you:
+													<br>
+													● Take time to master the encoding method ECCode™;
+													<br>
+													● Take the advantage of ECCode™ that you can look up new Chinese characters anytime and anywhere, look up
+													any new Chinese character you encounter at any time, and according to the animation demonstration of
+													Chinese character writing in the companion e-dictionary, at least write the Chinese character correctly
+													with your index finger in the palm according to the stroke order of animation demonstration, in order to
+													strengthen the Chinese character memory through the writing process;
+													<br>
+													● Try to use the ECCode™ to realize paperless homework as early as possible in your learning stage - the
+													earlier the better, so as to lay the foundation for paperless office in which Chinese is used as the
+													working language in the future.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：如何快速提高汉字键写（Chinese-character Keywriting）能力？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答 :<br>
+													俗话说，“欲速则不达”，提高汉字键写能力也是同样的道理。
+													<br>
+													要想提高汉字键写能力，就需要知道汉字键写能力的改善受制于哪些因素的制约。显然，汉字键写能力的提高受制于以下三个方面：
+													<br>
+													1.汉字词汇量的多寡；<br>
+													2.汉字键写工具软件的性能好坏；<br>
+													3.用户对键盘指法的熟练程度。<br>
+													对于很多拼音文字语言国家的汉语学习者来说，上述第三个因素不是汉字键写改善的主要障碍。
+													所以，对于外国汉语用户来说，如何快速扩大汉语词汇量，才是提高汉字键写能力最为关键的因素；其次就是如何选用一个性能指标最好的汉字键学工具软件。
+													<br>
+													但是，这中间有个问题容易被忽视了，这就是应该等到汉语词汇量积累到一定的程度之后再来练习提高汉字键写的能力呢，还是应该利用汉字键写工具来帮助快速扩大汉字词汇量？也就是说，有没有一种可能，让汉字键写工具能够越早帮助扩大汉语词汇量越好呢？显然，答案不言而喻，当然是汉字键写工具能够越早帮助扩大汉语词汇量越好啰！所以，只有把上述第一第二两个因素综合起来加以考虑的解决方案，才是有助于汉字键写能力提高的最佳解决方案。
+													<br>
+													只是这样一来，就又要直面“欲速则不达”这个问题了。也就是说，如果您想要充分利用基于键盘的信息技术快速扩大汉语词汇量、并在此汉字键学过程当中自然而然地提高汉字的键写能力，那么，您就得认真地学习【汉易码™】这个汉字编码方法。此所谓“慢”是为了更加地“快”。
+													<br>
+													具体地说，为了更好地提高汉字键写能力，建议您：<br>
+													● 花点时间掌握【汉易码™】这个汉字编码方法；<br>
+													● 利用【汉易码™】可以随时随地查询汉语生字的优势，您应该随时查询所遇到的任何汉语生字，并根据字典汉字书写的动画演示，至少用手指在手掌依照动画演示的笔顺正确地书写一下这个汉字，以期通过这种书写的过程强化汉字记忆；
+													<br>
+													● 尽量早地在求学阶段使用【汉易码™】实现无纸化作业——越早越好，借此为今后把汉语当作工作语言的无纸化办公奠定基础。<br>
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:What are your thoughts on the content reform of Chinese character teaching?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													As computers have only been born for decades, but Chinese characters have been born for thousands of
+													years, so it is not surprising that the traditional theory of Chinese characters is independent of the
+													computer encoding system of Chinese characters and can not create a new integrative theory of Chinese
+													characters, which takes into account the two "virtual and real worlds" of Chinese characters. Therefore,
+													it is urgent to reshape the theory of Chinese characters so that its theoretical system can take into
+													account some common principles of traditional Chinese character teaching and computer Chinese character
+													encoding theory at the same time. As for the existing problems in this respect, we have pointed out that
+													the contradiction between the rule of stroke order and the identification of Chinese radicals in the
+													traditional Chinese character theory through the examples of the characters "国" and "区" in the previous
+													question 6. Here, we will not repeat.
+													<br>
+													What we are concerned about is that the transformation or improvement of Chinese character theory should
+													be reflected in the following two aspects of content adjustment:
+													<br>
+													1.Pay attention to the consistency between the rule of stroke order and the verification of the radicals:
+													Gradually discard the explanation of some radicals that contradict the rule of stroke order, so that
+													"teaching Chinese characters in the virtual world" does not conflict with “"teaching Chinese characters in
+													the real world"”； Otherwise, it will give foreigners who have just begun to learn Chinese characters the
+													interference of Chinese character cognition;
+													<br>
+													2.Adjust the teaching content of common radicals: While highlighting the thought of "using Chinese
+													character teaching to promote the Chinese phrase teaching", traditional Chinese character teaching should
+													give priority as far as possible to arrange and highlight the teaching of the common used radicals which
+													are used in the computer encoding of Chinese characters, so that it could lay a complete foundation of
+													Chinese character knowledge for foreign Chinese learners to master Chinese character keylearning and
+													keywriting tools.
+													<br>
+													Obviously, the improvement of the above two points needs to make appropriate adjustments to the content of
+													the existing Chinese character teaching theory or materials.
+													<br>
+													In a word, in the Internet era, if the teaching of Chinese characters as hieroglyphics specially avoids
+													the teaching of information processing of Chinese characters required by the people using Chinese as their
+													working language as well as their paperless office, or does not take any consciousness of the information
+													processing of Chinese characters into the guiding ideology of Chinese character teaching, it is obviously
+													a serious defect. We look forward to being able to work with all of the resonators on the above two
+													aspects of comprehensive and in-depth interdisciplinary cooperation.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：贵公司对汉字教学内容的改革有什么想法？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													由于计算机才诞生几十年，而汉字已经诞生几千年了，所以传统汉字理论独立于汉字计算机编码体系而无法创建一体化的、兼顾“虚实两个汉字世界”的汉字新理论，也就不足为奇了。所以，目前亟待重塑汉字理论，使其理论体系能够同时兼顾传统汉字教学与计算机汉字编码理论的一些共同的原则。有关这方面所存在的问题，我们已经在前面问题6的解答当中通过“国”字和“区”字的举例，指出了传统汉字理论当中笔顺规则与汉字中部首鉴定之间的矛盾现象。在此，我们就不再赘述了。
+													<br>
+													我们所关心的是，汉字理论的改造或完善，应该体现在以下两个方面的内容调整上：
+													<br>
+													1.注重笔顺规则与偏旁部首界定的一致性：逐渐丢弃一些与笔顺规则相矛盾的偏旁部首之讲解，以便“虚实两个世界的汉字教学”不要相互冲突；否则，就会给刚刚开始学习汉字的外国人以汉字认知方面的干扰;
+													<br>
+													2.调整常用偏旁部首教学内容：在凸出“以字带词���的汉字教学思想的同时，尽可能优先安排和凸出计算机汉字编码所用的常见偏旁部首的教学，以便为汉语学习者掌握汉字键学和键写工具奠定完备的汉字基础知识。
+													<br>
+													显然，以上两点的改良，都需要对现有汉字教学理论或教材的内容做适度的调整。
+													<br>
+													总之，在互联网时代，作为象形文字的汉字教学，如果独避外国汉语用户的无纸化办公所需的汉字信息化处理方式的教学，并且在汉字教学的指导思想当中也丝毫不纳入任何汉字信息处理的意识，那么这显然是一种严重的缺憾。我们期望能够与共鸣者一起就以上两个方面做全面深入的跨学科合作。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Is there a contradictory relationship
+													between the teaching of Keylearning and Keywriting for Chinese characters and the teaching of correct hard
+													pen writing for Chinese characters in teaching Chinese as a foreign language?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													At present, almost all of the online Chinese learning dictionaries in the world are equipped with the
+													animation
+													demonstration function of Chinese character stroke order, so as to facilitate foreigners to learn the
+													correct
+													writing method of Chinese characters. However, in the practical application, what happened, so that these
+													dictionaries with stroke order animation demonstration have little practical effect on teaching foreigners
+													how to
+													write Chinese characters correctly?<br>
+													<img src="img/info_solve_TomDict_en.jpg">
+													For example, as shown in the figure above, Tom in the picture has just begun to learn Chinese for three
+													months. His
+													basic situation is as follows:<br>
+													1. He had mastered pinyin;<br>
+													2. He has completely mastered the basic stroke knowledge of Chinese characters;<br>
+													3. He has learned some of the most commonly used radicals.<br>
+													However, he did not know the character "李", and no one around him could tell him how to pronounce the
+													Chinese
+													character "李", or what its pinyin is, furthermore, he hasn't mastered the Chinese character query method
+													such as
+													stroke (According to David Moser [莫大伟]in his article "Why Chinese Is So Damn Hard" complaining foreigners
+													learning
+													Chinese character dictionary query method, just like learning a time consuming art)···. That is to say,
+													Tom in the
+													picture can't input the new character "李" into the e-dictionary at this time. In fact, just at this very
+													time,
+													Pinyin has lost any value to Tom! And the significance of modern science and technology for teaching
+													foreigners to
+													master the correct writing of Chinese characters has disappeared.<br>
+													What's more, if Tom sees "宫保鸡丁" in the restaurant and "南天门" on my journey..., all in all, it's outdoors,
+													not in the
+													study or classroom, what should he do if he wants to learn any Chinese characters he sees at any time and
+													anywhere,
+													so as to learn them at the most exciting time?<br>
+													It can be seen that at this time, if there is a way to help Tom input the new Chinese character into the
+													e-dictionary with his most familiar keyboard, so that he can watch the animation demonstration of correct
+													writing
+													method and learn the meaning interpretation of the character in time... , then, isn't this method to be
+													the best
+													way helping him to correctly write and learn Chinese characters!<br>
+													In view of this demand, the Easy Chinese Code™ (ECCode™) oriented to the concept of "Chinese dynamic
+													independent
+													learning" for foreigners was born.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：在对外汉语教学当中，教授汉字键学、键写与教授汉字正确的硬笔书写之间是一种相互矛盾的关系吗？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													目前，全球在线汉语学习字典当中，几乎都配有汉字笔顺动画演示功能、以方便外国人学习汉字的正确书写方法。但是，在实际应用当中，又出现了怎样的情况、以致于这些配有笔顺动画演示的字典在教授外国人正确书写汉字的教学方面没有多少实际的效果呢？
+													<br>
+													<img src="img/info_solve_TomDict_cn.jpg">
+													例如，以上图所示为例。图中的Tom刚开始学习汉语3个月，他的基本情况是：
+													<br>
+													1. 他已经完全掌握了汉语拼音；<br>
+													2. 他完全掌握了汉字的基本笔画知识；<br>
+													3. 他学过了一些最常用的偏旁部首。<br>
+													但是，他遇到了这个“李”字不认识，身边也没有人能够告诉他这个汉字“李”应该如何发音、或者其汉语拼音字母是什么，他还没有掌握诸如笔画一类的汉字查字法（据莫大伟[David Moser]在其文章<a href="http://www.pinyin.info/readings/texts/moser.html">《Why
+														Chinese Is So Damn Hard?》</a>中吐槽外国人学习汉字字典查询方法，就如同在学习一门艺术一样极其耗费时间）……。也就是说，此时图中的Tom没有办法把这个生字“李”输进电子字典里面。每当这个时候，汉语拼音对于Tom来说，就失去了任何价值！而现代科技对于教授外国人掌握汉字正确书写的意义也荡然无存了。
+													<br>
+													更何况，如果图中的Tom是在餐厅遇到了“宫保鸡丁”、在旅途遇到了“南天门”……，总之是在户外而不是在书房或者教室里，他想随时随地地即刻独立查询所遇到的任何汉字、以便在最为兴奋的时间点学习这些汉字，怎么办？
+													<br>
+													可见，此时，假如有一种方法能够帮助Tom用他最熟悉的键盘把这个汉语生字输进电子字典，以便他能够及时观看这个字的正确写法和字意解释……，那么，这个方法不就是在辅助他正确地书写和认识汉字吗！
+													<br>
+													有鉴于这种需求，面向外国人“汉语动态自主学习”理念的【汉易码™】就应运而生了。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Foreigners in China are only satisfied with learning Chinese listening and speaking so that they can buy
+													vegetables or something, right?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Actually, you will know what this saying talks about is just a superficial phenomenon when you think it in
+													another
+													way. Imagine, if these foreigners live in Germany or France for a long time, will they learn German or
+													French and
+													only be satisfied with being able to buy vegetables? Obviously, they will learn the words of these
+													languages and do
+													not want to be illiterate in these languages. After all, in many cases, they need to read the product
+													description,
+													write the contract..., and so on. Literacy is so worthful for them in these countries!
+													<br>
+													It can be seen that from the perspective of comparative research, since foreigners in China spend a lot of
+													money
+													and time in training institutions to learn Chinese, it is impossible for them to be only satisfied with
+													just
+													reaching the level of Chinese illiteracy in terms of listening and speaking. As to a lot of people
+													involved in
+													economy and trade, the value of literacy is self-evident.
+													<br>
+													However, why do many of these foreigners leave the impression of "little interest in Chinese literacy" to
+													Chinese
+													teachers in Chinese training institutions? In the final analysis, it is the result of the game between
+													"Time
+													Availability VS Difficulty Degree of Mastering Chinese Literacy": Traditionally, learning Chinese
+													characters takes
+													too much time, so that these foreigners can't afford the cost of time and they have to take the emergency
+													needs as
+													the primary task goal, i.e., in their opinion, to solve the problem of developing listening and speaking
+													ability is
+													the first work for them. But even the cultivation of listening and speaking ability, as a foreigner in
+													China, there
+													is only one way, that is, he has to "be immersed in the ocean of Chinese" almost all day. However, it also
+													takes a
+													lot of time!
+													<br>
+													As a result, many people "immerse" in the streets and lanes of China and achieve the ability of fluent
+													oral
+													Chinese. But when he / she sits at his / her desk and does paperless work, he / she finds that he / she
+													still can't
+													write a simple Chinese contract or email.
+													<br>
+													It can be seen that the phenomenon that foreigners in China show little interest in Chinese literacy is
+													just a
+													illusion of helplessness, and the truth is that traditionally Chinese literacy is so difficult that they
+													can't
+													afford the time cost of Chinese literacy. Therefore, how to solve the problem of Chinese literacy
+													difficult to
+													master is the most critical problem.
+													<br>
+													Fortunately, the Easy Chinese Code™ (ECCode™, 【汉易码】™]) was born to solve the problem mentioned above.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：在华外国人只想学学汉语听说、能买个菜什么的就行了，是吗？
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													实际上，我们换个角度想想，就知道这只是个表面现象。试想，如果这些外国人长期身处德国、法国，他们学习德语、法语而只会满足于能够买买菜吗？显然，他们会学习这些语言的文字，不想成为这些语言的文盲。毕竟在很多情况下，他们需要阅读产品说明书、撰写合同……等等等等。识字对于他们身处这些国家太有价值了！
+													<br>
+													可见，从比较研究的角度来看，在华外国人既然花了大价钱和时间去培训机构学习汉语，绝不仅仅是在听说方面达到中国文盲的水平就可以了。作为很多涉及经贸的人士来说，识字的价值是不言而喻的。
+													<br>
+													但是，为什么很多这样的外国人给中国培训机构的汉语老师留下的是“对汉语识字兴趣不大”的印象呢？说到底，是因为“时间空余度VS识字难易度”之间的博弈结果：传统上，学习汉字太耗时间了，以致于这些外国人付不起时间的代价，所以只能以应急之需为首要任务目标了——那就是先解决听说能力的养成吧。但即使是听说能力的养成，作为在华外国人，也只有一种途径，那就是他得“浸泡在汉语的海洋里”。可是，这同样需要耗费大量的时间啊！
+													<br>
+													结果，很多人“沉浸”在中国的大街小巷，练就了流利的口语，但等到他/她坐在办公桌前进行无纸化办公时，他/她发现自己还是连一份简单的中文合同或邮件都写不了。
+													<br>
+													可见，在华外国人对汉语识字表现出的“兴趣不大”这个现象只是一种无奈的假象，其真相是传统上汉语识字太难而导致他们付不起高昂的汉语识字的时间成本。所以，如何解决汉语识字难这个问题才是最为关键的问题。
+													<br>
+													非常幸运地是，Easy Chinese Code™ （ECCode™，【汉易码™】）就是为解决这个问题而诞生的。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:Is it necessary to subdivide the learners of ECCode™ because some kinds of Chinese learners perhaps do
+													not need to master it?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Obviously, for many foreigners who use Chinese as their working language, Chinese learning is not an end
+													in itself, but their purpose is autually to use Chinese in the workplace. Among the workplace, paperless
+													offices is a kind of occasions where it has to face the problem of how to input Chinese characters
+													efficiently. Therefore, how to meet the efficient requirements of Chinese keywriting for these foreigners
+													is a problem that ECCode™ has been thinking about from the very beginning.
+													<br>
+													That is to say, ECCode™ should not only solve the problem of Chinese character keylearning, but also solve
+													the problem of efficient keywriting of Chinese characters. Only in this way can foreigners who learn or
+													use Chinese enjoy "The Equal National Treatment of Computer" in front of information equipment.
+													<br>
+													Obviously, the phenomenon of many tools or technologies being specially developed for Chinese language and
+													different from those of other languages' keylearning and keywriting has just proves that Chinese language
+													has not shared "The Equal National Treatment of Computer" because of its enjoying this "special
+													treatment". In this sense, as long as a foreigner is learning Chinese or using it as the working language,
+													then, whenever he or she is faced with information equipment, there will be a question whether he or she
+													shares "The Equal National Treatment of Computer" or not.
+													<br>
+													As long as the teaching object of ECCode™ steps into the "virtual world" and wants to obtain the text
+													information resources from it, it will need the functional design of ECCode™ that helps him or her
+													keylearn or keywrite Chinese characters. That is to say, foreigners in the stage of no matter Chinese
+													character learning or having mastered Chinese and taken Chinese as their working language all need a
+													"unified" solution for Chinese character keylearning and keywriting based on their most familiar keyboard.
+													So, those practitioners of TCFL who only focus on the completion of the current existing teaching tasks
+													and do not serve the ultimate goal of internationalization of Chinese prospectively are obviously too
+													introverted and lose the height of TCFL.
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：ECCode™教授对象需要人群细分吗？(意指有些外国汉语学习者无需学习ECCode™了)
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													显然，对于很多以汉语作为工作语言的外国人来说，汉语学习本身不是目的，在职场上应用汉语才是目的。其中，无纸化办公就是一个需要面对如何高效地输入汉字这个问题的场合。所以，如何满足外国人在无纸化办公当中对汉字键写的高效要求，这是ECCode™从一开始就思考的问题。
+													<br>
+													即ECCode™不但要解决汉字的键学问题，也要解决高效的汉字键写的问题。只有这样，才能让使用汉语的外国人在信息设备面前享受到“平等的电脑国民待遇”。
+													<br>
+													显然，为了你汉语专门去开发迥异于其他语言键学和键写的工具或技术，享受这种“特殊待遇”，就不是“平等电脑国民待遇”了。从这个意义上说，只要这个外国人在学习和使用汉语作为工作语言，那么，任何时候，当他面对信息设备时，都会有一个是否享有“平等电脑国民待遇”的问题。
+													<br>
+													事实上，ECCode™的教授对象只要踏足“虚拟世界”并想要从中获取文字信息资源，都将需要ECCode™帮助其键学汉字或键写汉字的功能设计。也就是说，无论是处于汉字学习阶段的外国人，还是已经学成汉语而把汉语作为工作语言的外国人，他们都需要一个“统一的”、基于他们最熟悉的键盘的汉字键学与键写解决方案。所以，那种只关注目前既有教学任务是否完成而不怎么前瞻性地为汉语的国际化这个终极目标服务的对外汉语从业人员，显然是过于内敛而失去了对外汉语教学的高度了。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card EN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													Q:What is the factor that determines whether foreign Chinese learners' attitude towards the Stroke Order
+													rules are serious or slighting?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													ANS:<br>
+													Pragmatism! Especially in the computer age, even Chinese people seldom use hard pen to write characters,
+													so it is more difficult to motivate foreign Chinese learners, especially those foreign adults who cherish
+													time like gold, to abide by the stroke order rules while writing Chinese characters. Unless they can see
+													that obeying the rules of writing Chinese characters can bring them huge and substantial "dividends", it
+													will certainly be the common, long-standing problem that makes the orthodox teachers of TCFL headache.
+													<br>
+													In fact, pragmatism is an another saying of "Down to Earth". When disseminating Chinese culture to
+													foreigners, we must conform to the current of the times and let things go their own way. We cann't
+													mistakenly think that "the quintessence of traditional culture" has a sign of carrying forward just
+													according to the fact that a few foreigners who are good at learning our quintessence of Peking Opera.
+													<br>
+													In the face of such problems, we have to analyze them by linking the number of foreigners who like
+													traditional Chinese essences to the proportion of foreigners learning Chinese. At the same time, it can
+													also be compared with the performance of Chinese people in this respect.
+													<br>
+													Once we do this, we have to be sorry for finding that the fast-paced background of the times has driven
+													people out of almost no time to master the quintessence of the traditional culture which is a kind of hard
+													work! Although everyone knows the truth that "HASTE MAKES WASTE", the law of negation of negation in
+													nature acts on human beings mercilessly in such a way so as to make them usually tend to show the trend of
+													"seeking quick success and instant benefits".
+													<br>
+													Therefore, under the condition that people can't break away from the law of negation of negation in
+													nature, the reality of the decline of the form or way of inheriting traditional culture in the past is the
+													concrete embodiment of pragmatism's great influence on people's cultural preference under the background
+													of fast-paced era. In this preference cultivation, foreigners learning Chinese are also "people", who
+													share the common characteristics of people in the same era background ---- this is the short-termism and
+													pragmatism of "cost-effectiveness". This is also an important reason why some people regard pragmatism as
+													the pronoun of opportunism.
+													<br>
+													In view of this, in terms of how to motivate foreigners learning Chinese to follow the rules of Chinese
+													character writing, except for those minority who are really interested in the art of Chinese calligraphy,
+													for the vast majority of foreign Chinese learners, we must focus on the motivation of following the rules
+													of Chinese character writing, that is, what substantial "benefits" they can get. In the final analysis,
+													this is still a pragmatic "cost-effectiveness" issue.
+													<br>
+													If we tell Foreigners:
+													<br>
+													"→After you take some time to understand the rules of Chinese character writing and master the basic
+													principles of these rules, you can use these rules to master the methodology and principles of Chinese
+													character keylearning of ECCode™.
+													<br>
+													→In this way, you can look up new Chinese characters in an e-dictionary and enlarge your Chinese
+													vocabulary just as you can use the keyboard to learn new German words.
+													<br>
+													→For this reason, you can not only master the Chinese vocabulary which used to take many years to master
+													in a very short time, but also save a lot of investment cost in Chinese learning."
+													<br>
+													When hearing that there are such huge substantive benefits, compared with the convenience and efficiency
+													of electronic dictionary query when foreigners learn German, French and Arabic, the vast majority of
+													foreign Chinese learners have no reason to refuse to "save money". It should be a matter of common sense.
+													<br>
+													Therefore, only the right "medicine" can cure the "disease".
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card CN">
+									<div class="card-header">
+										<div class="row">
+											<div>
+												<h3 class="text-justify">
+													问：什么因素决定了外国人是否认真对待汉字笔顺规则的态度?
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div>
+												<h4 class="text-justify">
+													答：<br>
+													实用主义！尤其是在计算机时代，连中国人都很少使用硬笔书写文字了，要想激发出外国汉语学习者、尤其是惜时如金的外国成年汉语学习者对遵守汉字书写规则的动机就更难了。除非他们能够看到遵守汉字书写规则能够给他们带来巨大的实质性的“红利”，不然这肯定将是一个普遍的、长期存在的、令正统的对外汉语教师们头痛不已的问题。
+													<br>
+													实际上，实用主义是“接地气”的代名词。在向外国人传播中华文化的时候，千万要顺应时代发展的洪流而让一些事物顺其自然。我们不能看到有几个外国人学咱们的国粹京剧很在行，就误以为这一定预示着“传统文化精粹”有了发扬光大的兆头了。
+													<br>
+													面对诸如此类的问题，我们得把喜欢中国传统精粹的外国人数量与占学习汉语的外国人口的比例挂起钩来进行观察。同时，也可对照中国人自己在这方面的表现如何进行观察。
+													<br>
+													一旦我们这么做了的时候，就不得不遗憾地发现，快节奏的时代背景已经把人们撵得几乎没有了时间来“精雕细琢”于颇费功夫的传统精粹之掌握了！尽管谁都知道“欲速不达”的道理，但自然界否定之否定的规律就是这样在无情地作用于人类自身、使得他们往往表现出“急功近利”的趋势。
+													<br>
+													所以，在人们无法挣脱自然界否定之否定规律作用的情况下，过去那种传承传统文化的形式或方式之式微的现实状况，就是实用主义在快节奏时代背景下作用于人们文化偏好的巨大影响力之具体的体现。在这个偏好养成方面，学习汉语的外国人也是“人”，是“人”就有共享同一个时代背景下的人们之共同的特征——这就是“费效比”的短视主义和实用主义。这也是为什么有人把实用主义看作是机会主义的代名词的一个重要的原因。
+													<br>
+													有鉴于此，在如何激发学习汉语的外国人遵循汉字书写的规则方面，除了确实有志于中国书法艺术的一些小众之外，对于绝大多数的外国汉语学习者来说，我们就一定要从其遵循汉字书写规则的动机即能够得到什么实质性的“好处”方面去着眼了。说到底，这还是一个属于实用主义的“效费比”问题。
+													<br>
+													如果我们告诉外国人:
+													<br>
+													“→你花点时间了解一下汉字书写的规则，并掌握这些规则的基本原理之后，就可以利用这些规则知识掌握ECCode™汉字键学的方法原理了。
+													<br>
+													→这样，你就可以像使用键盘学习查询德语新单词那样查询汉语生字、扩大汉语词汇量了。
+													<br>
+													→ 为此，你就不但可以在很短的时间里面掌握过去需要很多年才能掌握的汉语词汇量了，而且你还能因此而节省大笔的汉语学习投资成本”。
+													<br>
+													当听到有这么巨大的实质性好处之后，比照外国人学习德语、法语、阿拉伯语时电子字典查询的那种便利性和效率，绝大多数外国汉语学习者都没有理由“跟钱过不去”。这应该是个常识性的问题吧。
+													<br>
+													所以，对症下药，方能药到病除。
+													<br><br>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!--End 页���主要内容-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+		<script type="text/javascript" src="js/main.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//登录标识
+				function validata() {
+					var flag = sessionStorage.getItem("loginflag");
+					if (flag == 1) {
+						return true;
+					} else
+						return false;
+				}
+				//uesr菜单
+				function protest() {
+					var username = sessionStorage.getItem("_username");
+					if (validata() == 1) {
+						$("#user").css('display', 'block');
+						$("#username").html('<b>' + username + '<span class="caret"></span></b>');
+						$("#username_CN").html('<b>' + username + '<span class="caret"></span></b>');
+						$("#login").css('display', 'none');
+					}
+				}
+				protest();
+				$(".CN_change").click(function() {
+					sessionStorage.setItem("language", "CN");
+					$(".CN").css('display', 'block');
+					$(".EN").css('display', 'none');
+				});
+				$(".EN_change").click(function() {
+					sessionStorage.setItem("language", "EN");
+					$(".CN").css('display', 'none');
+					$(".EN").css('display', 'block');
+				});
+
+				function language() {
+					var lan_flag = sessionStorage.getItem("language");
+					if (lan_flag == "CN") {
+						$(".CN").css('display', 'block');
+						$(".EN").css('display', 'none');
+					} else {
+						$(".CN").css('display', 'none');
+						$(".EN").css('display', 'block');
+					}
+				}
+				language();
+			});
+		</script>
+	</body>
+</html>

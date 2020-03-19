@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ecc Register</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/register-style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/register-style.default.css" id="theme-stylesheet">
+
+	</head>
+	<body>
+
+		<div class="main">
+			<h1>Register</h1>
+			<div class="w3_login">
+				<div class="w3_login_module">
+					<div class="module form-module">
+						<div class="toggle">
+							<i class="fa fa-times fa-pencil"></i>
+						</div>
+						<div class="form">
+							<h2>Choose Your Status</h2>
+							<div class="el-radio">
+								<span class="margin-r">Personal</span>
+								<input type="radio" name="status" id="person" value="person">
+								<label class="el-radio-style" for="person"></label>
+							</div>
+							<div class="el-radio">
+								<span class="margin-r">Training Institution or School</span>
+								<input type="radio" name="status" id="school" value="school">
+								<label class="el-radio-style" for="school"></label>
+							</div>
+							<br>
+							<input type="submit" value="next step" class="_toggle">
+						</div>
+						<div class="form">
+							<h2>Create A New Account</h2>
+							<div class="content">
+								<div class="form-group">
+									<input id="register-username" class="input-material" type="text" name="registerUsername" placeholder="Enter your Username"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										用户名必须在2~10位之间
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-password" class="input-material" type="password" name="registerPassword" placeholder="Enter your password"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										密码必须包含数字与字母且长度在6-16位
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-passwords" class="input-material" type="password" name="registerPasswords" placeholder="Enter password again"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										两次密码必须相同
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-name" class="input-material" type="text" name="registerName" placeholder="Enter your name"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										名称不能为空
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-phone" class="input-material" type="text" name="registerPhone" placeholder="Enter your phone number"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										请输入正确的手机号
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-language" class="input-material" type="text" name="registerLanguage" placeholder="Enter your mother language"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										语言不能为空
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="register-email" class="input-material" type="text" name="registerEmail" placeholder="Enter your email"
+									 autocomplete="off">
+									<div class="invalid-feedback">
+										请正确输入您的邮箱
+									</div>
+								</div>
+								<div class="form-group input_school" style="display: none">
+									<input id="register-school" class="input-material" type="text" name="registerSchool" placeholder="Enter your School"
+									 autocomplete="off" list="schoollist">
+									<div>
+										<datalist id="schoollist">
+											<select>
+
+											</select>
+										</datalist>
+									</div>
+									<div class="invalid-feedback">
+
+									</div>
+								</div>
+								<div class="form-group">
+									<input id="code" class="input-material" type="text" name="registerCode" placeholder="Enter the code" style="width:50%"
+									 autocomplete="off">
+									<button id="codesend" type="button" name="registerCode" class="btn btn-primary">Get the code
+									</button>
+									<div class="invalid-feedback">
+										验证码错误
+									</div>
+								</div>
+								<div class="form-group" style="text-align:center;">
+									<button id="regbtn" type="button" name="registerSubmit" class="btn btn-primary" style="width:80%">Finish
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.toggle').click(function() {
+					var flag = 0;
+					var show_flag = $("input[name='status']:checked").val();
+					if (show_flag == "school") {
+						$(".input_school").css("display", "block");
+						flag = 1;
+					} else if (show_flag == "person") {
+						flag = 1;
+					}
+					if (flag == 1) {
+						$('.form').animate({
+							height: "toggle",
+							'padding-top': 'toggle',
+							'padding-bottom': 'toggle',
+							opacity: "toggle"
+						}, "slow");
+					} else {
+						alert("Please Choose Your Status");
+					}
+				});
+				$('._toggle').click(function() {
+					var flag = 0;
+					var show_flag = $("input[name='status']:checked").val();
+					if (show_flag == "school") {
+						$(".input_school").css("display", "block");
+						flag = 1;
+					} else if (show_flag == "person") {
+						flag = 1;
+					}
+					if (flag == 1) {
+						$('.form').animate({
+							height: "toggle",
+							'padding-top': 'toggle',
+							'padding-bottom': 'toggle',
+							opacity: "toggle"
+						}, "slow");
+					} else {
+						alert("Please Choose Your Status");
+					}
+				});
+				var flagUsername = false;
+				var flagPassword = false;
+				var flagPasswords = false;
+				var flagName = false;
+				var flagEmail = false;
+				var flagLanguage = false;
+				var flagPhone = false;
+
+				$("#register-username").change(function() {
+					var Username = $("#register-username").val();
+					if (Username.length < 2 || Username.length > 12) {
+						$("#register-username").removeClass("form-control is-valid")
+						$("#register-username").addClass("form-control is-invalid");
+						flagUsername = false;
+					} else {
+						$("#register-username").removeClass("form-control is-invalid")
+						$("#register-username").addClass("form-control is-valid");
+						flagUsername = true;
+					}
+				})
+
+				$("#register-password").change(function() {
+					var passWord = $("#register-password").val();
+					if (!ispasw(passWord)) {
+						$("#register-password").removeClass("form-control is-valid")
+						$("#register-password").addClass("form-control is-invalid");
+						flagPassword = false;
+					} else {
+						$("#register-password").removeClass("form-control is-invalid")
+						$("#register-password").addClass("form-control is-valid");
+						flagPassword = true;
+					}
+				})
+
+				$("#register-passwords").change(function() {
+					var passWord = $("#register-password").val();
+					var passWords = $("#register-passwords").val();
+					if (passWord != passWords) {
+						$("#register-passwords").removeClass("form-control is-valid")
+						$("#register-passwords").addClass("form-control is-invalid");
+						flagPasswords = false;
+					} else {
+						$("#register-passwords").removeClass("form-control is-invalid")
+						$("#register-passwords").addClass("form-control is-valid");
+						flagPasswords = true;
+					}
+				})
+
+				$("#register-name").change(function() {
+					var name = $("#register-name").val();
+					if (name == null) {
+						$("#register-name").removeClass("form-control is-valid")
+						$("#register-name").addClass("form-control is-invalid");
+						flagName = false;
+					} else {
+						$("#register-name").removeClass("form-control is-invalid")
+						$("#register-name").addClass("form-control is-valid");
+						flagName = true;
+					}
+				})
+
+				$("#register-phone").change(function() {
+					var phone = $("#register-phone").val();
+					if (!isPhoneNum(phone)) {
+						$("#register-phone").removeClass("form-control is-valid")
+						$("#register-phone").addClass("form-control is-invalid");
+						flagPhone = false;
+					} else {
+						$("#register-phone").removeClass("form-control is-invalid")
+						$("#register-phone").addClass("form-control is-valid");
+						flagPhone = true;
+					}
+				})
+				$("#register-language").change(function() {
+					var labguage = $("#register-language").val();
+					if (labguage == null) {
+						$("#register-language").removeClass("form-control is-valid")
+						$("#register-language").addClass("form-control is-invalid");
+						flagLanguage = false;
+					} else {
+						$("#register-language").removeClass("form-control is-invalid")
+						$("#register-language").addClass("form-control is-valid");
+						flagLanguage = true;
+					}
+				})
+
+				$("#register-email").change(function() {
+					var email = $("#register-email").val();
+					if (!isEmail(email)) {
+						$("#register-email").removeClass("form-control is-valid")
+						$("#register-email").addClass("form-control is-invalid");
+						flagEmail = false;
+					} else {
+						$("#register-email").removeClass("form-control is-invalid")
+						$("#register-email").addClass("form-control is-valid");
+						flagEmail = true;
+					}
+				})
+
+				$("#register-school").change(function() {
+					var school = $("#register-school").val();
+					if (school == null) {
+						$("#register-school").removeClass("form-control is-valid")
+						$("#register-school").addClass("form-control is-invalid");
+					} else {
+						$("#register-school").removeClass("form-control is-invalid")
+						$("#register-school").addClass("form-control is-valid");
+					}
+				})
+
+				$("#register-ins").change(function() {
+					var ins = $("#register-ins").val();
+					if (ins == null) {
+						$("#register-ins").removeClass("form-control is-valid")
+						$("#register-ins").addClass("form-control is-invalid");
+					} else {
+						$("#register-ins").removeClass("form-control is-invalid")
+						$("#register-ins").addClass("form-control is-valid");
+					}
+				})
+				var list;
+				$.ajax({
+					type: "GET",
+					url: "http://server.fingerchinese.com:8083/getUniversity",
+					data: {
+						"name": ""
+					},
+					success: function(data) {
+						list = data.data;
+						for (var i = 0; i < list.length; i++) {
+							$('#schoollist').append('<option  value="' + list[i].schoolName + '"></option>');
+							$('#schoollist').append('<option  value="' + list[i].schoolEnglishName + '"></option>');
+						}
+					},
+					error: function(e) {
+						console.log(e);
+					}
+				});
+
+				function ispasw(value) {
+					var myreg = /^(?=.*[A-Za-z])(?=.*\d)[^]{6,16}$/;
+					return myreg.test(value);
+				}
+
+				function isPhoneNum(value) {
+					var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+					return myreg.test(value);
+				}
+
+				function isEmail(value) {
+					var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+					return myreg.test(value);
+				}
+
+				$("#codesend").click(function() {
+					if (flagName && flagPassword && flagPasswords && flagEmail && flagUsername && flagLanguage && flagPhone) {
+						var Username = $("#register-username").val();
+						var email = $("#register-email").val();
+						$.ajax({
+							type: 'POST',
+							url: 'http://server.fingerchinese.com:8083/user/sendRegisterCode',
+							dataType: "json",
+							data: {
+								"email": email,
+								"username": Username
+							},
+							success: function(data) {
+								if (data.msg != null)
+									alert(data.msg);
+								else {
+									alert("Send Successfully");
+								}
+							},
+							error: function(e) {
+								console.log(e);
+							}
+						});
+					} else {
+						if (!flagUsername) {
+							$("#register-username").addClass("form-control is-invalid");
+						}
+						if (!flagPassword) {
+							$("#register-password").addClass("form-control is-invalid");
+						}
+						if (!flagPasswords) {
+							$("#register-passwords").addClass("form-control is-invalid");
+						}
+						if (!flagName) {
+							$("#register-name").addClass("form-control is-invalid");
+						}
+						if (!flagPhone) {
+							$("#register-phone").addClass("form-control is-invalid");
+						}
+						if (!flagLanguage) {
+							$("#register-language").addClass("form-control is-invalid");
+						}
+						if (!flagEmail) {
+							$("#register-email").addClass("form-control is-invalid");
+						}
+					}
+				})
+
+				$("#regbtn").click(function() {
+					if (flagName && flagPassword && flagPasswords && flagEmail && flagUsername && flagLanguage && flagPhone) {
+						var ins = $("input[name='status']:checked").val();
+						if (ins == "school")
+							ins = $("#register-school").val();
+						var Username = $("#register-username").val();
+						var Password = $("#register-passwords").val();
+						var Name = $("#register-name").val();
+						var Phonenumber = $("#register-phone").val();
+						var language = $("#register-language").val();
+						var email = $("#register-email").val();
+						var code = $("#code").val();
+						var data1 = {
+							"username": Username,
+							"password": Password,
+							"email": email,
+							"institution": ins,
+							"motherLanguage": language,
+							"name": Name,
+							"emailCode": code,
+							"phoneNumber": Phonenumber,
+						}
+						$.ajax({
+							type: 'POST',
+							url: 'http://server.fingerchinese.com:8083/user/regist',
+							data: JSON.stringify(data1),
+							crossDomain: true,
+							dataType: "json",
+							contentType: 'application/json; charset=UTF-8',
+							success: function(data) {
+								if (data.msg != null)
+									alert(data.msg);
+								else {
+									alert("Register Successfully");
+									var twoUrl = encodeURI("login.html"); //使用encodeURI编码
+									location.href = twoUrl;
+								}
+							},
+							error: function(e) {
+								console.log(e);
+							}
+						});
+						return false;
+					} else {
+						if (!flagUsername) {
+							$("#register-username").addClass("form-control is-invalid");
+						}
+						if (!flagPassword) {
+							$("#register-password").addClass("form-control is-invalid");
+						}
+						if (!flagPasswords) {
+							$("#register-passwords").addClass("form-control is-invalid");
+						}
+						if (!flagName) {
+							$("#register-name").addClass("form-control is-invalid");
+						}
+						if (!flagPhone) {
+							$("#register-phone").addClass("form-control is-invalid");
+						}
+						if (!flagLanguage) {
+							$("#register-language").addClass("form-control is-invalid");
+						}
+						if (!flagEmail) {
+							$("#register-email").addClass("form-control is-invalid");
+						}
+					}
+				})
+			});
+		</script>
+	</body>
+</html>

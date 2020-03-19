@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>在线翻译_在线词典_金山词霸_爱词霸英语</title>
+<meta name="keywords" content="翻译,在线翻译,词典,英语,英语口语,英语作文,英语学习网站,爱词霸,金山词霸" />
+<meta name="description" content="爱词霸英语为广大网友提供在线翻译、在线词典、英语口语、英语学习资料、汉语词典，金山词霸下载等服务，致力于为您提供优质权威的在线英语服务，是5000万英语学习者的首选。" />
+<meta name="mobile-agent"content="format=xhtml;url=http://wap.iciba.com/"> 
+<link rel="shortcut icon" href="http://res.iciba.com/dict/favicon.ico" type="/image/x-icon" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://res.iciba.com/dict/opensearch_desc.xml" title="爱词霸 词典">
+<script>
+	//abtest,if have any problems,please call me(wangwenwu@kingsoft.com)
+	(function(){
+		
+		var urlA = "http://www.iciba.com/";
+		var urlB = "http://www.iciba.com/new_iciba/index.php";
+		
+		function setCookie(name, value, day){
+			var exp = new Date();
+			exp.setTime(exp.getTime() + day*24*3600);
+			document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+		}
+		
+		function getCookie(name){
+			var value = '';
+			if(document.cookie.length > 0){
+				var start = document.cookie.indexOf(name + "=");
+				if(start !== -1){
+					start += name.length + 1;
+					var end = document.cookie.indexOf(";", start);
+					end == -1 ? end = document.cookie.length : null;
+					value = unescape(document.cookie.substring(start, end));	
+				}
+			}
+			return value;
+		}
+		
+		var abRandom = Math.floor(Math.random(new Date()) * 5);
+		function abtest(randomNum){
+			switch(randomNum){
+				case 0 : {
+					document.location.href = urlB;
+					setCookie('abtest', 'b', 30);
+					break;
+				};
+				default: {
+					document.location.href = urlA;
+					setCookie('abtest', 'a', 30);
+				} ;
+			}
+		}
+		
+		function init(){
+			var abtestflag = getCookie('abtest');
+			var oldHref = document.location.href;
+			if(abtestflag){
+				if(abtestflag === 'a' && oldHref !== urlA){
+					document.location.href = urlA;
+				}else if(abtestflag === 'b' && oldHref !== urlB){
+					document.location.href = urlB;
+				}
+			}else{
+				abtest(abRandom);
+			}
+		}
+
+		init();
+	})();
+</script>
+<style type="text/css">
+<!--
+*{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}body{font-size:12px;color:#999;background-color:#fff;}ul{list-style-type:none}a{color:#346699;text-decoration:none}a:hover{text-decoration:underline}.font_black,#spdc .font_black{color:#333}.fl{float:left}.fr{float:right}img{border:0}a{color:#153769}#spdc{color:#666;min-width:960px;height:30px;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) repeat-x 0 0;line-height:30px;padding:0 16px;overflow:hidden;}#spdc a{color:#666;text-decoration:none}#showinfo{margin-left:20px}#showinfo span{padding:0}.input_style{width:638px;font-weight:bold;padding:2px 45px 0 5px;height:27px;font-size:18px;line-height:27px;margin:0;color:#333}.handwrite,.handwrite_over,.handwrite_close,.handwrite_close_over{width:16px;height:16px;cursor:pointer;position:absolute;top:7px;right:114px}#search_main .handwrite,#search_main .handwrite_over,#search_main .handwrite_close,#search_main .handwrite_close_over{right:130px}.handwrite{background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat -20px -35px;z-index:9999}.handwrite_over,.handwrite_close,.handwrite_close_over{background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat -20px -55px}.search{width:116px;height:36px;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat -90px -35px;border:0;cursor:pointer;float:right;*margin-top:1px;_margin-top:0;}.search_hover{background-position:-90px -75px}.more_info_2{background-position:0 -330px;margin:17px 0 0 32px}#phrase_ol{margin-left:30px}#footer .hp_footer a:hover{color:#4372b6}#header{position:relative;width:100%;z-index:2}.drop_down{background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif);background-repeat:no-repeat}.tab_tt{height:22px;padding-top:6px;padding-right:7px;text-align:right;background-position:0 -301px;overflow:hidden;position:relative}.tab_tt li.ad_tab_hover{background-position:-198px -305px}#main_layout .tab_main a:hover{color:#4372b6}.day_eng li{height:23px;width:180px;text-align:left;overflow:hidden;clear:both;float:left;padding-bottom:7px}.english_main h1.f20{font-size:20px}.join_word{background-position:-438px -335px;font-size:12px;font-weight:normal;height:14px;margin:13px 0 0 9px;padding:0 16px;}.join_word:hover{background-position:-438px -390px}.ico_sound{float:left;margin:4px 0 -4px;_margin:2px 12px 0 0;background-position:-240px -240px;width:13px;height:13px;display:block}.ico_sound:hover{background-position:-273px -241px}.search_bt{background-position:-221px -510px;width:101px;height:31px;float:left}.search_bt_hover{background-position:-221px -542px}.sc_web{background-position:-332px -510px;width:91px;height:31px;float:left;margin-left:8px}.sc_web_hover{background-position:-332px -542px}.search_bar_left{width:5px;height:41px;background-position:-373px -390px}#center{position:relative;width:655px;margin:0 auto 20px;padding:48px 153px 56px 152px;z-index:1;}.top_ad{position:absolute;top:0;left:0;width:960px;height:48px;}.top_ad a{outline:none;}.top_ad a,.top_ad img{display:block;width:960px;height:48px;}.left_ad,.right_ad{position:absolute;top:226px;width:60px;height:230px;}.left_ad{left:0;}.right_ad{right:0;}.left_ad a,.left_ad img,.right_ad a,.right_ad img{display:block;width:60px;height:230px;}#logo{text-align:center;padding:50px 0 25px;*padding-top:82px;position:relative}#logo img{margin-right:28px;}#search_main ul.nav{height:35px;line-height:31px;font-size:14px;color:#236fd4;}#search_main ul.nav li{padding:0 15px 0 7px;float:left}#search_main ul.nav li a{color:#333;}#search_main ul.nav li a:hover{color:#236fd4;text-decoration:underline;}.input_box{position:relative;height:36px}.bg_left{width:1px;height:34px;display:block;position:absolute;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat 0 -35px;left:1px;*top:1px;}.input_style,.search_input{background:#fff url(http://cdn.iciba.com/web/static/images/vbg_new.gif) repeat-x 0 -198px;border-top:#c0c0c0 1px solid;border-left:#c0c0c0 1px solid;border-right:#d9d9d9 1px solid;border-bottom:#d9d9d9 1px solid}.search_input{border-width:1px;border-style:solid;border-color:#9a9a9a #b2b2b8 #9a9a9a #9a9a9a;width:479px;_float:left;font-size:16px;height:29px;line-height:29px;padding:2px 53px 2px 5px}input_style_hover,.search_input_hover,.input_style:hover{border:#c0c0c0 1px solid}input_style_focus,.search_input_focus,.search_input:focus,.input_style:focus{border:#236fd4 1px solid}#search_main ul.nav li.no_bg{background:0}#search_main ul.nav li.no_bg a{color:red;}#foot{min-width:960px;width:100%;position:absolute;bottom:0;}.bottom_ad{text-align:center;padding-bottom:10px;width:960px;margin:0 auto;position:relative;overflow:hidden;}.bottom_text{text-align:right;color:#d4d4d4;line-height:29px;height:29px;overflow:hidden;border-top:#e0e0e0 1px solid;}.foot_main{padding-left:260px;border-top:1px solid #e0e0e0;padding:5px 10px;text-align:right;}.foot_main span a{margin:0 6px}#foot a{color:#999}#foot .text_blue{color:#4372b6}#foot span,#foot span a{color:#999}.search_button .search{width:109px;height:29px;background-position:0 -574px}.search_button .search_hover{background-position:-110px -574px}.search_button .search_web{width:89px;height:29px;background-position:-220px -574px;margin-left:16px;float:left}.search_button .search_web_hover{background-position:-310px -574px;margin-left:16px;float:left;width:89px}#search_main{position:relative;z-index:3000}#pull_down{position:absolute;font-size:14px;top:69px;width:537px;border:#c6c6c6 1px solid;background-color:#fff;line-height:170%;color:#333;z-index:1000;visibility:hidden}#pull_down .text_blue{color:#0766dc;font-weight:bold}.text_right{float:right;color:#999}#pull_down li{padding:0 5px}#pull_down li.bg_blue{background-color:#539aef;color:#fff}#pull_down li.bg_blue .text_right{color:#fff}#pull_down li.bg_blue .text_blue{color:#fff}#pull_down p{background-color:#f0f0f0;height:22px;line-height:22px;text-align:right;padding-right:5px}.pull_button{height:31px;padding:4px 0 9px 142px}.pull_button .search{margin-left:16px}.pull_button .search_web,.pull_button .search_web_hover{float:left}.drop_down{width:16px;height:16px;display:block;position:absolute;right:155px;top:10px;background-position:-46px -35px}.drop_down:hover{background-position:-66px -35px}#foot a:hover,#spdc a:hover,#spdc .font_black:hover,#foot span a:hover{text-decoration:underline;color:#4372b6}#dict_right5{border:1px solid #d9e2e9;float:right;width:187px}.expression{background:url(http://cdn.iciba.com/web/static/images/bg_ksl4.jpg?20120330) no-repeat;width:335px;font-size:14px;padding:12px 0 0 45px;margin:64px auto;height:67px;line-height:20px;}.expression a{color:#4372B6}.expression a span.text_red{color:#FE0208}.nav li{position:relative;}.znew{display:block;width:24px;height:16px;overflow:hidden;position:absolute;background:url(http://cdn.iciba.com/web/static/images/new.gif) no-repeat;top:-5px;right:0;line-height:100px;}.hp_footer{color:#999!important;}.vDown{width:335px;padding-left:10px;font-size:12px;margin:64px auto 0;height:67px;line-height:20px;}.vDown a{display:inline-block;margin-right:12px;line-height:26px;padding-left:28px;color:#63abe1;}.vDown a.vPc{background:url(http://cdn.iciba.com/web/static/images/vPc.gif) no-repeat left center;}.vDown a.vIp{background:url(http://cdn.iciba.com/web/static/images/vIp.gif) no-repeat left center;padding-left:22px;}.vDown a.vAn{background:url(http://cdn.iciba.com/web/static/images/vAn.gif) no-repeat left center;}.vDown a:hover{color:#3c8ac3;background-position:-120px center;}.vHot{font-weight:100;font-size:12px;color:#666;margin-top:18px;padding-left:7px;}.vHot a{color:#666;margin-right:19px;zoom:1;}.vHot a:hover{color:#236fd4;text-decoration:underline;}.vProduct{margin-top:57px;text-align:center;*padding-left:74px;}.vProduct h3{display:inline;font-weight:100;font-size:12px;}.vProduct a,.vProduct h3.vp_a,.vProduct h3.vp_b,.vProduct h3.vp_d,.vProduct h3.vp_e{line-height:17px;height:17px;color:#666;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat;margin-right:26px;padding-right:10px;text-align:left;display:inline-block;*float:left;}.vProduct h3.vp_a,.vProduct h3.vp_b,.vProduct h3.vp_d,.vProduct h3.vp_e{margin-right:0;position:relative;cursor:pointer;z-index:20;}.vProduct h3.vp_a a,.vProduct h3.vp_b a,.vProduct h3.vp_d a,.vProduct h3.vp_e a{background:none;}.vProduct h3.vp_a2 a.vp_h3,.vProduct h3.vp_b2 a.vp_h3,.vProduct h3.vp_d2 a.vp_h3,.vProduct h3.vp_e2 a.vp_h3{color:#236fd4}.vProduct a{padding-right:0;}.vProduct a:hover{text-decoration:none;color:#236fd4;}.vProduct h3.vp_a{padding-left:19px;background-position:-210px -34px;}.vProduct h3.vp_a2{background-position:-210px -54px;}.vProduct h3.vp_b{padding-left:20px;background-position:-210px -74px;padding-right:0;margin-right:26px}.vProduct h3.vp_b a{margin-right:0;}.vProduct h3.vp_b2{background-position:-210px -93px;}.vProduct h3.vp_d{float:none;padding-left:18px;background-position:-210px -158px;padding-right:0;margin-right:10px;}.vProduct h3.vp_d2{background-position:-210px -178px;}.vProduct h3.vp_e{padding-left:18px;background-position:-90px -116px;padding-right:0;}.vProduct h3.vp_e2{background-position:-90px -136px;}.vp_list{position:absolute;padding-top:6px;left:-5px;top:16px;*background:#fff;*top:17px;display:none;}.vp_list span{display:block;width:16px;height:9px;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat -60px -55px;margin-left:31px;position:relative;z-index:100;}.vp_list ul{border:1px solid #dcdada;margin-top:-1px;_margin-top:-7px;background:#fff;position:relative;z-index:99;}.vp_list li{height:30px;overflow:hidden;line-height:30px;padding:0 12px;_padding-top:7px;_height:23px;color:#333;}.vp_list_bg{background:#ebebeb;}.vp_list a{background:none;color:#666;margin-right:19px;}.vp_list a:hover{color:#236fd4;text-decoration:underline;}.vp_a .vp_list{width:255px;}.vp_b .vp_list{width:145px;}.vp_d .vp_list{width:145px;}.vp_e .vp_list{width:230px;}.vProduct a.vp_c{padding-left:21px;background-position:-210px -116px;}.vProduct a.vp_c:hover{padding-left:21px;background-position:-210px -136px;}.vProduct a.vp_d{padding-left:18px;background-position:-210px -158px;}.vProduct a.vp_d:hover{padding-left:18px;background-position:-210px -178px;}.vProduct a.vp_e{padding-left:18px;background-position:-90px -116px;}.vProduct a.vp_e:hover{padding-left:18px;background-position:-90px -136px;}.vp_list li a{float:none;display:inline;}.vProduct h3.vp_e a{margin-right:10px;}.vp_a .vp_list ul li a{*width:150px;*height:17px;*overflow:hidden}
+.vTip{width:354px;height:217px;position:absolute;overflow:hidden;top:-190px;left:-325px;z-index:98;display:none;}
+.vTip .num{position:absolute;left:153px;bottom:10px;z-index:10;}
+.vTip .num a{width:8px;height:8px;display:inline-block;margin:0 3px;overflow:hidden;cursor:pointer;background:url(http://cdn.iciba.com/web/static/images/vTip.gif) no-repeat -8px 0;}
+.vTip .num a.cur{background-position:0 0}
+.vTip ul li{display:none;padding:0!important;}
+#logo{z-index:3001;position:relative}
+.vMobile{position:absolute;left:440px;bottom:23px;_left:235px;_top:147px;}
+.vMobile_t,.vMobile_box_j,.vMobile_bar_img,.vMobile_bar_j,#logo li a{background:url(http://cdn.iciba.com/web/static/images/mobile.png) no-repeat}
+.vMobile_t{width:60px;height:27px;background-position:-301px 0;}
+.vMobile_box{background:#fff;border:1px solid #cdcdcd;position:absolute;opacity:0.9;box-shadow:0px 1px 2px #efefef;border-radius:10px;behavior:url(pie.htc);width:580px;top:30px;left:-255px;}
+.vMobile_box_j{top:-7px;left:276px;width:12px;height:7px;overflow:hidden;background-position:-140px 0;position:absolute;}
+.vMobile_box_c{padding:15px 5px;_padding:15px 7px;zoom:1;height:165px;overflow:hidden}
+.vMobile_box_c li{width:113px;float:left;margin:0 13px;_margin:0 10px}
+.vMobile_bar{width:101px;height:101px;background:#0ab1ff;margin:0 auto;padding:6px;}
+.vMobile_bar_img{width:101px;height:101px;background-position:0 -17px}
+.vMobile_bar_j{width:7px;height:4px;overflow:hidden;margin:0 auto;background-position:-160px 0;}
+#logo li a{display:block;width:114px;height:40px;margin-top:7px;background-position:-110px -220px}
+.vMobile_box_li2 .vMobile_bar{background:#ffa800}
+.vMobile_box_li2 .vMobile_bar_img{background-position:-100px -17px}
+.vMobile_box_li2 .vMobile_bar_j{background-position:-175px 0}
+#logo li.vMobile_box_li2 a{background-position:-230px -220px}
+.vMobile_box_li3 .vMobile_bar{background:#00d01c}
+.vMobile_box_li3 .vMobile_bar_img{background-position:-200px -17px}
+.vMobile_box_li3 .vMobile_bar_j{background-position:-190px 0}
+#logo li.vMobile_box_li3 a{background-position:-110px -260px}
+.vMobile_box_li4 .vMobile_bar{background:#67d100}
+.vMobile_box_li4 .vMobile_bar_img{background-position:0 -220px}
+.vMobile_box_li4 .vMobile_bar_j{background-position:-205px 0}
+#logo li.vMobile_box_li4 a{background-position:-230px -260px;cursor:inherit}
+/*企业版下载*/
+.vProduct a.vp_f{padding-left:21px;background-position:-90px -158px;}
+.vProduct a.vp_f:hover{padding-left:21px;background-position:-90px -178px;}
+/*增加搜网页*/
+.searchWeb{width:80px;height:36px;background:url(http://cdn.iciba.com/web/static/images/vbg_new.gif) no-repeat 0 -75px;border:0;cursor:pointer;float:right;*margin-top:1px;_margin-top:0;margin-left:5px}
+.searchWeb_hover{background-position:0 -115px}
+/*增加背单词推广位*/
+.vBdc{position:absolute;top:31px;right:0;width:325px;height:328px;z-index:1;display:none;}
+.vBdc a{display:block;width:325px;height:328px; no-repeat;overflow:hidden;position:absolute;top:0;z-index:2}
+
+#search_main #quanwei_lj{display:block; width:86px; height:58px; background:no-repeat url('http://cdn.iciba.com/web/static/images/pro_sentence.gif'); position:absolute; top:-58px; left:-25px; display:none;}
+-->
+/* S 20131206 close_global_ad */
+a.close_global_ad{position:absolute;top:-18px;;right:0;width:30px;height:18px;line-height:18px;padding-left:20px;font-size:12px;color:#fff;background:url(http://cdn.iciba.com/web/static/images/close_global_ad.png) no-repeat;display:none;}
+/* E 20131206 close_global_ad */
+</style>
+</head>
+<body>
+<div id="header">
+<link href="http://cdn.iciba.com/web/common_top/top.css" rel="stylesheet" type="text/css"><div class="iciba_common_top" id="iciba_common_top"><div class="" id="iciba_common_top_box"> <strong class="iciba_common_top_fl">每日一句：</strong> <a onclick="iciba_common_top_clickCountIndex(1)" class="iciba_common_top_c" href="http://news.iciba.com/dailysentence/detail-746.html" target="_blank" title="For some men, nothing is written unless they write it. 对于一些人来说，命运是由自己书写的，没有什么是注定的。">For some men, nothing is written unless they write it. 对于一些人来说，命运是由自己书写的，没有什么是注定的。</a> <a class="iciba_common_laba" href="javascript:;" title="点击发音" onclick="asplay_top('http://news.iciba.com/admin/tts/2013-12-17.mp3');iciba_common_top_clickCountIndex(2)" onmouseover="iciba_common_top_onSecondDelay('http://news.iciba.com/admin/tts/2013-12-17.mp3');" onmouseout="clearTimeout(timer);"></a> <a onclick="iciba_common_top_clickCountIndex(3)" class="iciba_common_top_lx" href="http://news.iciba.com/dailysentence/speak-746.html" target="_blank">跟读</a> <div class="iciba_common_top_func" id="iciba_common_top_Login"> <!--登录后显示区域开始--> <!----> <!--登录后显示区域结束--> <!--登录后隐藏区域开始--> <!--登录后隐藏区域结束--> <!--<a class="iciba_common_top_func_a" href="#" target="_blank" title="反馈">反馈</a>--> <div class="iciba_common_top_func_map" id="iciba_common_top_func_map"> <a class="iciba_common_top_func_a iciba_common_top_func_web" id="iciba_common_top_func_web" href="http://web.iciba.com/more.shtml" target="_blank" ><strong>网站地图</strong><b class="iciba_common_top_j"></b></a> <div class="iciba_common_top_func_list" id="iciba_common_top_func_list"> <a onclick="iciba_common_top_clickCountIndex(11)" href="http://scb.iciba.com/" target="_blank" title="我的生词本"><b class="iciba_common_top_func_list_1"></b>我的生词本</a> <a onclick="iciba_common_top_clickCountIndex(12)" href="http://word.iciba.com/" target="_blank" title="在线背单词"><b class="iciba_common_top_func_list_2"></b>在线背单词</a> <a onclick="iciba_common_top_clickCountIndex(13)" href="http://zt.iciba.com/guess/" target="_blank" title="词汇猜猜看"><b class="iciba_common_top_func_list_3"></b>词汇猜猜看</a> <div class="iciba_common_top_func_line"></div> <a onclick="iciba_common_top_clickCountIndex(14)" href="http://fy.iciba.com/resume/" target="_blank" title="简历翻译"><b class="iciba_common_top_func_list_4"></b>简历翻译</a> <a onclick="iciba_common_top_clickCountIndex(15)" href="http://fy.iciba.com/pigai/" target="_blank" title="写作批改"><b class="iciba_common_top_func_list_5"></b>写作批改</a> <div class="iciba_common_top_func_line" style="margin-bottom:1px"></div> <a onclick="iciba_common_top_clickCountIndex(16)" href="http://web.iciba.com/more.shtml" target="_blank" title="更多" class="iciba_common_top_func_list_m">更多>></a> </div> </div> </div> <div id="iciba_common_top_popularize" ></div> <script> var top_rand = parseInt(Math.random() * (100-1 + 1)+1); var top_rand_obj = document.getElementById("iciba_common_top_popularize"); if(top_rand<50){ top_rand_obj.innerHTML='<a onclick="iciba_common_top_clickCountIndex(300)" class="iciba_common_top_ad2" href="http://download.iciba.com/pc/PowerWord.1700.exe"></a>'; }else{ top_rand_obj.innerHTML='<a target="_blank" onclick="iciba_common_top_clickCountIndex(500)" class="iciba_common_top_ad" href="http://mobile.iciba.com/powerword/2012/"></a>'; } </script></div><object style="height:0px;width:0px;overflow:hidden;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="0" height="0" id="asound_top" align="absmiddle"> <param name="allowScriptAccess" value="always" /> <param name="movie" value="http://www.iciba.com/top/asound.swf" /> <param name="quality" value="high" /> <embed src="http://www.iciba.com/top/asound.swf" quality="high" width="0" height="0" name="asound_top" align="absmiddle" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> </object></div><script src="http://cdn.iciba.com/web/webiciba_common_top/iciba_common_top_v4w.js" type="text/javascript"></script><script type="text/javascript">var url = window.location.href;url = url.replace('http://', '');url = url.split('/');if(url[1] != 'undefined' && url[1] != '' && url[0] == 'www.iciba.com'){ var jsurl = 'http://cdn.iciba.com/web/static/scripts/hwj_code_l.js';}else if((url[1] == 'undefined' || url[1] == '') && url[0] == 'www.iciba.com'){ var jsurl = 'http://cdn.iciba.com/web/static/scripts/hwj_code_r.js';}else { var jsurl = 'http://cdn.iciba.com/web/static/scripts/hwj_code_r.js';}add_js(jsurl);function add_js(jsurl){ document.write("<script type=\"text/javascript\" src=\""+jsurl+"\"><\/script>");}</script>
+</div>
+<div id="center">
+	<p class="top_ad"><a target="_blank"  onClick="clickCountIndex(999999)" href="http://www.haowj.com/leveltest.htm?restart=1&r_from=icibatopbanner
+"><img src="http://cdn.iciba.com/web/static/images/top_ad.gif" alt="" /></a></p>
+		<div id="logo">
+<a href="http://2013.iciba.com/?action=play&from=icibalogo#content" target="_blank" onClick="clickCountIndex(1)" ><img border="0" src="http://cdn.iciba.com/web/static/images/homelogo31.gif" title="玩英语游戏，赢小米电视。参与即有收获。" ></a>
+<div class="vMobile" id="vMobile" >
+            	<div class="vMobile_t"></div>
+            	<div class="vMobile_box" id="vMobile_box" style="display:none" onMouseOver="MobileShow();">
+                	<div class="vMobile_box_j"></div>
+                    <ul class="vMobile_box_c">
+                    	<li>
+                        	<div class="vMobile_bar">
+                            	<div class="vMobile_bar_img"></div>
+                            </div>
+                            <div class="vMobile_bar_j"></div>
+                            <a href="http://itunes.apple.com/cn/app/jin-shan-ci-ba-4.0/id348737611?mt=8" target="_blank" onClick="clickCountIndex(61)"></a>
+                        </li>
+                        <li class="vMobile_box_li2">
+                        	<div class="vMobile_bar">
+                            	<div class="vMobile_bar_img"></div>
+                            </div>
+                            <div class="vMobile_bar_j"></div>
+                            <a href="https://itunes.apple.com/cn/app/jin-shan-ci-bahd/id580370890?mt=8" target="_blank" onClick="clickCountIndex(62)"></a>
+                        </li>
+                        <li class="vMobile_box_li3">
+                        	<div class="vMobile_bar">
+                            	<div class="vMobile_bar_img"></div>
+                            </div>
+                            <div class="vMobile_bar_j"></div>
+                            <a href="http://cp.iciba.com/PowerWord.apk" onClick="clickCountIndex(63)"></a>
+                        </li>
+			<li class="vMobile_box_li4">
+                        	<div class="vMobile_bar">
+                            	<div class="vMobile_bar_img"></div>
+                            </div>
+                            <div class="vMobile_bar_j"></div>
+                            <a href="###"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<!–[if IE 6]>
+<script type="text/javascript">
+document.execCommand("BackgroundImageCache", false, true);
+</script>
+<![endif]–> 
+
+
+</div>	
+    <div id="search_main">
+		 <div id="pull_down"></div>
+    	<ul class="nav">
+        	<li id="tab1" onClick="clickCountIndex(2)" style="z-index:100"><strong>词典</strong></li>
+            <li id="tab2" style="z-index:99">
+            	<a href="http://dj.iciba.com/" onClick="clickCountIndex(3)" style="z-index:99; position:relative">句库</a><span id="quanwei_lj"></span>
+            	
+            </li>
+            <li><a href="http://fy.iciba.com/" target="_blank" onClick="clickCountIndex(4)">翻译</a></li>
+         
+            <li><a href="http://news.iciba.com/" target="_blank" onClick="clickCountIndex(6)">学习</a></li>
+	    <li>
+		<a href="http://www.haowj.com/index.htm?r_from=icibaHomeNav" target="_blank" onClick="clickCountIndex(2000)">
+			好外教
+		</a>
+		<span style="z-index:99"></span>
+		<span class="znew">new</span>
+	    </li>
+	    <li>
+		<a style="color:red;" href="http://xue.iciba.com/middle/index.htm?r_from=icibadh" target="_blank" onClick="clickCountIndex(1999)">
+			在线课程
+		</a>
+	    </li>
+            <li><a href="http://nbdc.iciba.com/" target="_blank" onClick="clickCountIndex(71)">背单词</a></li>
+            <li><a href="http://liuxue.iciba.com/?j_track=hezuo_iciba_index" target="_blank" onClick="clickCountIndex(15)">轻松留学</a></li>
+            <li><a href="http://zt.iciba.com/ef/daohang/chaci.htm" target="_blank" onClick="clickCountIndex(7)">免费英语</a></li>
+            <li><a href="http://download.iciba.com/pc/PowerWord.1700.exe" onClick="clickCountIndex(8)">下载</a></li>
+            <li><a style="display:none" href="#" target="_blank">更多>></a></li>
+        </ul>
+		<form id="dictF" onSubmit="search_word();return false;" action="/search" method="get">
+        <ul class="input_box">
+			<span class="bg_left"></span>
+            <!--<button onClick="clickCountIndex(80)" title="ctrl+回车也能搜索" id="searchWebsoso" onMouseOut="this.className='searchWeb'" type="button" onMouseOver="this.className='searchWeb searchWeb_hover'" class="searchWeb"></button>-->
+			<button onMouseOut="this.className='search'" onMouseOver="this.className='search search_hover'" type="submit" class="search" onClick="clickCountIndex(10);"></button>
+        	<input class="search_input" name="s" id="s" type="text" maxlength="64" autocomplete="off" onFocus="this.select();" onBlur="$(this).removeClass('input_style_focus');$(this).removeClass('input_style_hover');" onMouseOver="this.focus()"/>
+            <div onClick="showFlash('/static/images/swf/blue_paint.swf');clickCountIndex(9);" class="handwrite" id="showButton" title="打开/关闭手写输入"></div>
+			<a href="javascript:;" onClick="ICIBA.Suggest.PanelToggle(event);clickCountIndex(11);" class="drop_down" id="icibaSubToggle" title="打开/关闭查词建议面板"></a>
+        </ul>
+		</form>
+		<h5 class="vHot" style="line-height:20px">热点： 
+<style type="text/css">#vScroll,#vScroll2{height:20px;overflow:hidden;display:inline-block;zoom:1;*display:inline;line-height:20px;vertical-align:top}#vScroll p{line-height:20px}</style>
+        	<div id="vScroll">
+            	<p><a href="http://zt.iciba.com/guess/?module=caici&act=exam&guess_id=3369" target="_blank" title="dead meat 的意思是?"  onclick="clickCountIndex(20)">dead meat 的意思是?</a></p> 
+                <p><a href="http://zt.iciba.com/guess/?module=caici&act=exam&guess_id=3368" target="_blank" title="double-cross 的意思是?"  onclick="clickCountIndex(27)">double-cross的意思是?</a></p>
+                <p><a href="http://dict.iciba.com/oxford" target="_blank" title="学地道英语的好方法是？"  onclick="clickCountIndex(28)">学地道英语的好方法是？</a></p>  
+            </div>
+                <div id="vScroll2">
+            	<p><a href="http://news.iciba.com/study/basic/1564253.shtml?f=index" target="_blank" title="热词：渐进式延迟退休年龄" onclick="clickCountIndex(64)">热词：渐进式延迟退休年龄</a></p>
+                <p><a href="http://news.iciba.com/study/basic/1564229.shtml" target="_blank" title="连词替换用法，写作加分！" onclick="clickCountIndex(65)">连词替换用法，写作加分！</a></p>
+                <p><a href="http://sl.iciba.com/viewthread-23-11225744-1.shtml" target="_blank" title="餐桌上各种餐具该怎么说？" onclick="clickCountIndex(66)">餐桌上各种餐具该怎么说？</a></p>  
+</div>
+<a href="http://xue.iciba.com/middle/index.htm?r_from=icibalink" target="_blank" title="创新在线英语学习平台" onclick="clickCountIndex(23)" style="color:#236fd4">30天，练就一口流利英语！</a>
+<a href="http://2013.iciba.com/?action=play&from=icibatextlink#content" class="vDict" target="_blank" onclick="clickCountIndex(32)" title="词霸年底回馈，有奖英语游戏等你玩">敢挑战我吗</a>
+<style type="text/css">.vHot a.vDict{background:#ff560d;color:#fff;padding:2px 6px;*padding:0px 3px;margin-left:12px;*margin-left:0;margin-right:0;}.vHot a.vDict:hover{background:#ef4902;text-decoration:none}</style>
+</h5>
+<script type="text/javascript">
+
+/*滚动*/
+function startScroll(vlh, vspeed, vdelay, vindex) {
+	var t;
+	var p = false;
+	var o = document.getElementById(vindex);
+	o.innerHTML += o.innerHTML;
+	o.onmouseover = function() {
+		p = true;
+	};
+	o.onmouseout = function() {
+		p = false;
+	};
+	o.scrollTop = 0;
+	function vstart() {
+		if (!p) o.scrollTop +=1;
+		t = setInterval(vscrolling, vspeed);
+	}
+	function vscrolling() {
+		if (o.scrollHeight != 0) {
+		vlh = Math.floor(o.scrollHeight / 6);
+		}
+		if (o.scrollTop % vlh != 0) {
+			o.scrollTop += 1;
+			if (o.scrollTop >= vlh * 3)
+			o.scrollTop = 0;
+		}
+		else {
+		clearInterval(t);
+		setTimeout(vstart, vdelay);
+		}
+	}
+	setTimeout(vstart, vdelay);
+}
+startScroll(20, 25, 3000, "vScroll");
+startScroll(20, 25, 3000, "vScroll2"); 
+</script>  </div>
+    <div class="vProduct">
+    	<h3 class="vp_a"><a href="http://news.iciba.com/" target="_blank" class="vp_h3" onClick="clickCountIndex(30)">每日英语</a>
+        	<div class="vp_list">
+            	<span></span>
+                <ul>
+                    <li>每日资讯：<a onClick="clickCountIndex(31)"  href="http://news.iciba.com/study/bilingual/1564231.shtml" target="_blank" title="资讯1">奥巴马追悼会上玩自拍？
+
+ 
+ 
+</a> </li>
+                    <li>每日资讯：<a onClick="clickCountIndex(33)"  href="http://news.iciba.com/salon/lizhizhuanlan/1564215.shtml" target="_blank" title="资讯2 
+ ">lazy susan是什么意思？
+ </a> </li>
+
+                </ul>
+            </div>
+      </h3>         <h3 class="vp_b"><a href="http://ciba.iciba.com/" target="_blank" class="vp_h3" onClick="clickCountIndex(40)">词霸下载</a>
+        </h3>
+        <h3><a onClick="clickCountIndex(67)" href="http://qy.iciba.com/" title="词霸企业版下载" target="_blank" class="vp_f">词霸企业版</a></h3>
+        <h3><a onClick="clickCountIndex(50)" href="http://fy.iciba.com/pigai/" title="提供作文批改功能" target="_blank" class="vp_c">写作批改</a></h3>
+        <h3 class="vp_d"><a class="vp_h3" onClick="clickCountIndex(51)" href="http://nbdc.iciba.com" title="背单词" target="_blank">背单词</a>
+        	<div class="vp_list">
+            	<span></span>
+                <ul>
+                	<li onClick="clickCountIndex(55)"><a href="http://nbdc.iciba.com/" target="_blank" title="背单词网页版">背单词网页版</a></li>
+                    <li onClick="clickCountIndex(56)"><a href="http://cp.iciba.com/jinshanbeidanci/" target="_blank" title="背单词iphone版">背单词iphone版</a></li>
+                     <li onClick="clickCountIndex(57)"><a href="http://download.iciba.com/bdc/weixin/AWordBack_VC3_WeiXin_999.apk"  title="背单词android版">背单词android版</a></li>
+                </ul>
+            </div>
+        </h3>
+    </div>
+    <a style="cursor:pointer" class="close_global_ad">关闭</a>
+</div><!-- center -->
+
+</div>
+
+<div id="foot">
+  <div class="bottom_ad" id="bottom_ad">
+    <!--<div id="flash_foot" ssrc="http://cdn.iciba.com/web/co/ci/Gets0320001.swf"></div> <div id="flash_id" style="display:none" hid="http://ad-apac.doubleclick.net/clk;269736935;95844935;k?http://www.toeflgoanywhere.org/cn"></div> <div style="display:none"><img src="http://ad-apac.doubleclick.net/ad/N4864.168155.ICIBA.COM/B7252607.2;sz=1x1;ord=[timestamp]?" /></div>-->
+    <a rel='external nofollow' href="http://www.webinternational.com.cn/lp/hienglish/xiaohuoban/v_1/landing.html?ADID=1333641&CityID=-1&utm_source=iciba&utm_campaign=hienglish-xiaohuoban-v_1&utm_adgroup=xiaohuoban&utm_medium=home" target="_blank" onclick="clickCountIndex(31)"><img id="indexads" ssrc="http://cdn.iciba.com/web/co/ci/Gweb0726xiaohuoban960.gif" width="960" height="60"/></a> </div>
+  <div class="foot_main"> <span class="fl"><a href="http://web.iciba.com/adv/index.html" target="_blank" onclick="clickCountIndex(500)">合作</a>|<a href="http://cp.iciba.com/" target="_blank" onclick="clickCountIndex(501)">产品</a>|<a href="http://weibo.com/ciba" target="_blank" onclick="clickCountIndex(502)">微博</a>|<a href="http://web.iciba.com/ciku/" target="_blank" onclick="clickCountIndex(503)">词库</a>|<a onclick="AddFavorite(window.location,document.title);clickCountIndex(505);" title="加入收藏" href="javascript:;">收藏</a>|<a href="http://job.kingsoft.com/search.php?didian=%E4%B8%8D%E9%99%90&type=%E4%B8%8D%E9%99%90&division=KCB%E9%87%91%E5%B1%B1%E8%AF%8D%E9%9C%B8&keyword=&x=23&y=13" target="_blank" onclick="clickCountIndex(506)">招聘</a>|<a href="http://sl.iciba.com/forum.php" target="_blank" onclick="clickCountIndex(507)">论坛</a></span><a href="http://www.haowj.com/licence/001.jpg" target="_blank">京ICP证100054号</a> <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202010082000006" target="_blank"><img align="absmiddle" border="0" alt="备案" src="http://cdn.iciba.com/web/static/images/ico_ft.gif"></a> <a href="http://www.kingsoft.com/licence/002.jpg" target="_blank">新出网证
+    <京>
+    字011号</a> <a href="http://www.kingsoft.com/licence/003.jpg" target="_blank">京网文【2011】0509-172号</a> <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备06025896号</a> <span title="京公网安备110108400997号">京公网安备</span> </div>
+</div>
+<div class="vBdc"><a style="background:url(http://cdn.iciba.com/web/static/images/bg_haowj2.gif);" href="http://www.haowj.com/different.htm?r_from=icibaHomeCorner" target="_blank" onClick="clickCountIndex(1001)"></a></div> 
+<script type="text/javascript" src="http://cdn.iciba.com/web/static/scripts/event.min.js"></script>
+
+<script type="text/javascript">
+function search_word() {
+	if(document.getElementById('s').value.trim() == '') {
+		return false;
+	} else {
+		clickCountIndex(12);
+		if (ICB.curTab==2) {
+			top.location.href='http://dj.iciba.com/'+encodeURIComponent(document.getElementById('s').value);
+		} else {
+			if(ICIBA_TOP.user.id > 0){
+				var rand = parseInt(Math.random() * (999999-100000)+100000);
+				top.location.href='/'+encodeURIComponent(document.getElementById('s').value.trim().replace( / /g, "_"))+"?renovate="+rand;
+			}else{
+				top.location.href='/'+encodeURIComponent(document.getElementById('s').value.trim().replace( / /g, "_"));
+			}
+		}
+	}
+	return false;
+}
+</script>
+<script type="text/javascript">
+function AddFavorite(sURL, sTitle) {
+	try {
+		window.external.addFavorite(sURL, sTitle);
+		return false;
+	} catch (e) {
+		try {
+			window.sidebar.addPanel(sTitle, sURL, "");
+			return false;
+		} catch (e) {
+			alert("加入收藏夹失败，请使用Ctrl+D进行添加");
+			return false;
+		}
+	}
+}
+var showButton = document.getElementById('showButton');
+if (is_ie) {
+	showButton.attachEvent("onclick", preventDivClose);
+	document.attachEvent("onclick", divClose);
+} else  {
+	showButton.addEventListener("click", preventDivClose, false);
+	document.addEventListener("click",divClose, false);
+}
+if (window.addEventListener||window.attachEvent)
+{
+	ICB.init();ICIBA.Suggest.Install('s', true, 'dictF', 'pull_down');$('#s').focus();
+	if(document.getElementById("indexads")){
+		document.getElementById("indexads").src = document.getElementById("indexads").getAttribute("ssrc");
+	}else{
+		var flash_foot = document.getElementById("flash_foot").getAttribute("ssrc");
+		var hid = document.getElementById("flash_id").getAttribute("hid");
+		document.getElementById("bottom_ad").innerHTML='<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960px" height="60px"><param name="movie" value="'+flash_foot+'"><param name="quality" value="high"><param name="wmode" value="opaque" /><embed src="'+flash_foot+'" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="60" wmode="opaque"></embed></object><a onclick="clickCountIndex(31)" style="position:absolute;width:960px;height:60px;left:0px;top:0px;cursor:pointer;z-index:10;background-color:#fff;filter:alpha(opacity=0);opacity:0;" target="_blank" href="'+hid+'" /></div>';
+	}
+}
+</script>
+<script>document.write("<script>var _kds2_p = 2057;<\/script><script src=\"http://cdn.iciba.com/web/static/scripts/kds2_record.js\" type=\"text\/javascript\" charset=\"utf-8\"><\/script>");</script> 
+<script type="text/javascript">
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+function hB(){
+	var wH=$(window).height();
+	if(wH<520){
+		$("#foot").css("position","static");
+	}else{
+		$("#foot").css("position","absolute");
+	}
+}
+$(function(){
+	hB();
+//	$("#searchWebsoso").live('click',function(){
+//		window.open("http://www.sogou.com/sogou?query="+encodeURIComponent(document.getElementById('s').value)+"&pid=sogou-site-e8258e5140317ff3");
+//	});
+//	$(document).keypress(function(e){
+//		if(e.ctrlKey && e.which == 13 || e.which == 10) {
+//			window.open("http://www.sogou.com/sogou?query="+encodeURIComponent(document.getElementById('s').value)+"&pid=sogou-site-e8258e5140317ff3");
+//		}
+//
+//	});
+	if(getCookie('index_quanwei') != 1){
+		if($("#quanwei_lj").show()){
+			setTimeout('$("#quanwei_lj").hide()', 3000);
+			setCookie('index_quanwei', 1);
+		}
+	}
+});
+window.onresize=hB;
+$(".vp_a").hover(
+function(){
+	$(this).addClass("vp_a2");$(".vp_a .vp_list").css("display","block");
+},
+function(){
+	$(this).removeClass("vp_a2");$(".vp_a .vp_list").css("display","none");
+}
+);
+$(".vp_b").hover(
+function(){
+	$(this).addClass("vp_b2");
+},
+function(){
+	$(this).removeClass("vp_b2");
+}
+);
+$(".vp_d").hover(
+function(){
+	$(this).addClass("vp_d2");$(".vp_d .vp_list").css("display","block");
+},
+function(){
+	$(this).removeClass("vp_d2");$(".vp_d .vp_list").css("display","none");
+}
+);
+$(".vp_e").hover(
+function(){
+	$(this).addClass("vp_e2");$(".vp_e .vp_list").css("display","block");
+},
+function(){
+	$(this).removeClass("vp_e2");$(".vp_e .vp_list").css("display","none");
+}
+);
+$(".vp_list li").hover(
+function(){
+	$(this).addClass("vp_list_bg");
+},
+function(){
+	$(this).removeClass("vp_list_bg");
+}
+);
+function contains(parentNode, childNode) {
+	if (parentNode.contains) {
+		return parentNode != childNode && parentNode.contains(childNode); }
+		else {
+			return !!(parentNode.compareDocumentPosition(childNode) & 16);
+		}
+}
+function checkHover(e,target){
+	var rel = getEvent(e).relatedTarget ,
+	from = getEvent(e).fromElement ,
+	to = getEvent(e).toElement;
+	if (getEvent(e).type=="mouseover")  {
+		return !contains(target,rel||from) && !( (rel||from)===target );
+	} else {
+		return !contains(target,rel||to) && !( (rel||to)===target );
+	}
+}
+function getEvent(e){
+	return e||window.event;
+}
+function MobileShow(){
+	document.getElementById("vMobile_box").style.display="block";
+}
+function Mobile(){
+	var times;
+	var tt=document.getElementById("vMobile");
+	var box=document.getElementById("vMobile_box");
+	tt.onmouseover=function(e){
+		if(checkHover(e,this)){
+			times=setTimeout(function(){
+				box.style.display="block";
+				return false;
+			},300)
+		}
+	}
+	tt.onmouseout=function(e){
+		if(checkHover(e,this)){
+			clearTimeout(times);
+			box.style.display="none";
+			return false;
+		}
+	}
+}
+Mobile();
+function checkFather(that,e){
+	var parent =e.relatedTarget;
+	try {
+		while ( parent && parent !== that ) {
+			parent = parent.parentNode;
+		}
+		return (parent !== that);
+	} catch(e) { }
+}
+
+function setCookie(name,value,day){
+    var Days = day || 1;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+ 
+function getCookie(name){
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg)) return unescape(arr[2]);
+    else return null;
+}
+ 
+function delCookie(name){
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+//2013万圣节logo
+/*$(function (){
+    var timer = null;
+    var timer2 = null;
+    $("#logo > a").find("img").hover(function (){
+	clickCountIndex(99999);
+        var _this = $(this);
+        timer = setTimeout(function (){
+            asplay_top("http://cdn.iciba.com/web/static/audio/music.mp3");
+            $("#vMobile").hide();
+            _this.attr("src","http://cdn.iciba.com/web/static/images/logo_2.gif");
+            $("body").append("<div class='mask'></div>");
+            var iW = $("body").width();
+            var iH = document.documentElement.clientHeight;
+            $(".mask").css({"width":iW,"height":iH,"position":"absolute","top":0,"left":0,"backgroundColor":"#000","opacity":0.85,"z-index":9999});
+            timer2 = setTimeout(function (){
+                $("#vMobile").show();
+                _this.attr("src","http://cdn.iciba.com/web/static/images/logo_1.png");
+                $("div").remove(".mask");
+            },2000);
+        },200);
+    },function (){
+        timer == null ? null : clearTimeout(timer);
+        timer2 == null ? null : clearTimeout(timer2);
+        $("#vMobile").show();
+        $(this).attr("src","http://cdn.iciba.com/web/static/images/logo_1.png");
+        $("div").remove(".mask");
+    });
+});*/
+//abtest logo click
+
+$(function($){
+	$("#logo a").eq(0).bind('click', function(){
+		setCookie('abtest', 'b', 30);
+	});
+})
+</script>
+<script src="http://click.iciba.com/h.js?c044a8e7db31139f03b4a53b01c271c0"></script><!-- 新加点击统计代码 -->
+</body>
+</html>

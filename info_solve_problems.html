@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>Ecc</title>
+		<link rel="icon" href="favicon.ico" type="image/ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/materialdesignicons.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
+		<style type="text/css">
+			#user {
+				display: none;
+			}
+
+			.CN {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="lyear-layout-web">
+			<div class="lyear-layout-container">
+				<!--左侧导航-->
+				<aside class="lyear-layout-sidebar">
+
+					<!-- logo -->
+					<div id="logo" class="sidebar-header">
+						<a href="index.html"><img src="img/logo.png" title="ECC" alt="ECC" style="width:50%;" /></a>
+					</div>
+					<div class="lyear-layout-sidebar-scroll">
+
+						<nav class="EN sidebar-main">
+							<ul class="nav nav-drawer">
+								<li class="nav-item"> <a href="index.html"><i class="mdi mdi-book-open-page-variant"></i> Ecc Dictionary</a></li>
+								<li class="nav-item"> <a href="products.html"><i class="mdi mdi-format-vertical-align-bottom"></i>Products</a></li>
+								<li class="nav-item"> <a href="aboutUs.html"><i class="mdi mdi-home"></i>About Us</a></li>
+								<li class="nav-item nav-item-has-subnav active open">
+									<a href="javascript:void(0)"><i class="mdi mdi-menu"></i>More Information</a>
+									<ul class="nav nav-subnav">
+										<li> <a href="info_guide.html">Guide</a></li>
+										<li> <a href="info_price.html">Price</a></li>
+										<li> <a href="info_service.html">Products&#38;service</a></li>
+										<li> <a href="info_views.html">Similar Views</a></li>
+										<li> <a href="info_cooperation.html">Cooperation</a></li>
+										<li class="active"> <a href="info_solve_problems.html">What_problems_to_solve</a></li>
+										<li> <a href="info_FAQs.html">FAQs</a></li>
+										<li> <a href="info_Contact.html">Contact Us</a></li>
+									</ul>
+						</nav>
+						<nav class="CN sidebar-main">
+							<ul class="nav nav-drawer">
+								<li class="nav-item"> <a href="index.html"><i class="mdi mdi-book-open-page-variant"></i> Ecc 词典</a></li>
+								<li class="nav-item"> <a href="products.html"><i class="mdi mdi-format-vertical-align-bottom"></i>产品</a></li>
+								<li class="nav-item"> <a href="aboutUs.html"><i class="mdi mdi-home"></i>关于我们</a></li>
+								<li class="nav-item nav-item-has-subnav active open">
+									<a href="javascript:void(0)"><i class="mdi mdi-menu"></i>更多信息</a>
+									<ul class="nav nav-subnav">
+										<li> <a href="info_guide.html">向导</a></li>
+										<li> <a href="info_price.html">价格</a></li>
+										<li> <a href="info_service.html">产品&#38;服务</a></li>
+										<li> <a href="info_views.html">相似观点</a></li>
+										<li> <a href="info_cooperation.html">合作</a></li>
+										<li class="active"> <a href="info_solve_problems.html">解决什么样的问题</a></li>
+										<li> <a href="info_FAQs.html">常见问题解答</a></li>
+										<li> <a href="info_Contact.html">联系我们</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="sidebar-footer">
+							<p class="copyright CN">&copy;2019 南京纳融计算机汉字技术有限公司</p>
+							<p class="copyright EN">&copy;2019 Nanjing Narong Computer Hanzi Technology Co.Ltd.:All rights reserved</p>
+							<p style="font-size: small;"><a href="http://www.miitbeian.gov.cn/">苏ICP备19023054号</a></p>
+						</div>
+					</div>
+
+				</aside>
+				<!--End 左侧导航-->
+
+				<!--头部信息-->
+				<header class="lyear-layout-header">
+					<nav class="navbar navbar-default">
+						<div class="topbar">
+
+							<div class="topbar-left">
+								<div class="lyear-aside-toggler">
+									<span class="lyear-toggler-bar"></span>
+									<span class="lyear-toggler-bar"></span>
+									<span class="lyear-toggler-bar"></span>
+								</div>
+								<span class="EN navbar-page-title"> What_problems_to_solve </span>
+								<span class="CN navbar-page-title"> 解决什么样的问题 </span>
+							</div>
+
+							<ul class="topbar-right">
+								<li id="user" class="dropdown dropdown-profile">
+									<div class="EN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span id="username"></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li> <a href=""><i class="mdi mdi-account"></i>Personal Information</a> </li>
+											<li> <a href="forget.html"><i class="mdi mdi-lock-outline"></i>Change Password</a> </li>
+											<li class="divider"></li>
+											<li> <a href="login.html"><i class="mdi mdi-logout-variant"></i>Sign Out</a> </li>
+										</ul>
+									</div>
+									<div class="CN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span id="username_CN"></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li> <a href=""><i class="mdi mdi-account"></i>个人信息</a> </li>
+											<li> <a href="forget.html"><i class="mdi mdi-lock-outline"></i>修改密码</a> </li>
+											<li class="divider"></li>
+											<li> <a href="login.html"><i class="mdi mdi-logout-variant"></i>退出登录</a> </li>
+										</ul>
+									</div>
+								</li>
+								<li id="login">
+									<a href="login.html">
+										<span class="EN"><b>Please Login</b></span>
+										<span class="CN"><b>登录</b></span>
+									</a>
+								</li>
+								<li class="dropdown dropdown-profile" style="margin-right:10px;">
+									<div class="EN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span><b>Language</b></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li class="CN_change"> <a href="#"><i class="mdi mdi-lightbulb"></i> Chinese</a> </li>
+											<li class="EN_change"> <a href="#"><i class="mdi mdi-lightbulb-on-outline"></i>English</a> </li>
+										</ul>
+									</div>
+									<div class="CN">
+										<a href="javascript:void(0)" data-toggle="dropdown">
+											<span><b>语言</b></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li class="CN_change"> <a href="#"><i class="mdi mdi-lightbulb-on-outline"></i> 中文</a> </li>
+											<li class="EN_change"> <a href="#"><i class="mdi mdi-lightbulb"></i>英文</a> </li>
+										</ul>
+									</div>
+								</li>
+								<!--切换主题配色-->
+								<li class="dropdown dropdown-skin">
+									<span data-toggle="dropdown" class="icon-palette"><i class="mdi mdi-palette"></i></span>
+									<ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+										<li class="drop-title">
+											<p class="CN">主题</p>
+											<p class="EN">Theme</p>
+										</li>
+										<li class="drop-skin-li clearfix">
+											<span class="inverse">
+												<input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+												<label for="site_theme_1"></label>
+											</span>
+											<span>
+												<input type="radio" name="site_theme" value="dark" id="site_theme_2">
+												<label for="site_theme_2"></label>
+											</span>
+										</li>
+										<!--切换主题配色-->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<!--End 头部信息-->
+
+				<!--页面主要内容-->
+				<main class="lyear-layout-content">
+					<div class="container-fluid">
+						<div>
+							<div class="card EN">
+								<div class="card-header">
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 p-0" style="text-align: center;">
+											<h2>What Problems to Solve</h2>
+											<img style="max-height:240px;" src="img/info_solve_1.gif">
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div style="text-align: center;" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+											<h4 class="text-justify">
+												As we all know, the training of listening, speaking, reading and writing skills
+												involved in language application is limited by the amount of vocabulary of users of the language.<br><br>
+												At present, on the one hand, restricted by the teacher's limited energy, it is impossible for the teacher
+												to teach the learners how to correctly write each Chinese character and explain its meaning; on the other
+												hand, there are many online dictionaries on the Internet, which are not only equipped with an animation to
+												demonstrate the stroke order of writing a Chinese character correctly, but also provide the meaning
+												translation and usage of each Chinese character. However, these resources are used very low because the
+												beginners learning Chinese do not have effective means for retrieval. Therefore, how to make full use of
+												the internet resources available to foreign Chinese learners to independently learn Chinese characters and
+												quickly expand their Chinese vocabulary should be the implied meaning of "A master is responsible for
+												teaching basic knowledge, and further study depends on one's own efforts", and also the task goal that TCFL
+												should achieve.<br><br>
+												However, the Internet application of Chinese language poses new challenges to teaching Chinese as a foreign
+												language (TCFL for short). The traditional practice of ignoring the Internet application of Chinese has
+												been difficult to adapt to the urgent needs of foreign Chinese learners and users in the Internet Era. In
+												other words, in the face of the Internet application of Chinese, should the TCHL keep pace with the times
+												and expand and improve the teaching content?<br><br>
+												For example, as shown in the figure below, Tom in the picture has just begun to learn Chinese for three
+												months. His basic situation is as follows:<br><br>
+											</h4>
+											<img src="img/info_solve_TomDict_en.jpg">
+											<h6>
+												Fig.1 Tom Looking forward to Looking up the Chinese Character Dictionary
+											</h6><br><br>
+											<h4 class="text-justify">
+												1. He has been familiar with the pronunciation of each Pinyin;<br>
+												2. He has completely mastered the basic stroke knowledge of Chinese characters;<br>
+												3. He has learned some of the most commonly used radicals.<br><br>
+												But, he did not know the character "李", and no one around him could tell him how to pronounce the Chinese
+												character "李", or what its pinyin is, furthermore, he hasn't mastered the Chinese character query method
+												such as stroke (According to David Moser in his article <a href="http://www.pinyin.info/readings/texts/moser.html">
+													"Why Chinese Is So Damn Hard?" </a> complaining foreigners learning Chinese character dictionary query
+												method, just like learning a time consuming art)···. That is to say, Tom in the picture can't input the new
+												character "李" into the e-dictionary at this time. In fact, just at this very time, Pinyin has lost any
+												value to Tom! And the significance of modern science and technology for teaching foreigners to master the
+												correct writing of Chinese characters has disappeared.<br><br>
+												In addition, for those foreigners and Chinese who have mastered the same number of Chinese characters, the
+												speed of using computers to input characters is also greatly different. For example, the same master of 500
+												Chinese characters, also knowing the two characters "蜂" and "蜜", but the Chinese people in the process of
+												growing up can learn the difference between "蜂蜜" and "蜜蜂" naturally from the surrounding language
+												environment, while 99.5% of foreign Chinese learners around the world do not have this environmental
+												advantage to naturally accumulate their vocabulary. It is for these and other reasons that American
+												Sinologist David Moser came to the conclusion that Chinese is "losing the battle of languages" in the
+												Internet" (See Chapter 15 "A Losing Battle: The Internet" in A Billion Voices: China's Search For A Common
+												Language by David Moser).<br><br>
+												But actually, paperless Chinese office in the information age is also an application form of "Chinese
+												language" in the "virtual world", or in other words, "virtual world" is also an application spot of Chinese
+												language which is an unavoidable problem in TCFL. In this era, Chinese teaching as a foreign language
+												should be in addition to the traditional listening, speaking, reading and writing, and add a "keyboard"
+												application which can reflect the basic characteristic of the Internet era of Chinese with the times.<br><br>
+												However, as to the keyboard application of Chinese, in the face of foreigners' Chinese learning and
+												application in the VIRTUAL WORLD, the biggest dilemma of the TCFL is reflected in the following two
+												aspects: one is that the efficiency barrier of querying e-dictionary is insurmountable, the other is that
+												the efficiency of Chinese keywriting (namely writing by keyboard or typing) is too low due to the limited
+												vocabulary. For example, when an Arab learns German, he can master German letters and phonetic symbols in
+												two months. After that, he can independently and efficiently search for new German words in any time and
+												space. However, it also took him two or three months to master the Chinese Pinyin, the basic knowledge of
+												strokes and some common radicals of Chinese characters, it didn't mean that he had the convenience of
+												dictionary inquiry for learning new Chinese characters. As a result, when foreigners are learning Chinese,
+												their vocabulary accumulation speed is much lower than when they learn alphabetic language. In view of
+												this, the foreigners' acquisition of the speed of keywriting Chinese characters which is equal to that of
+												Chinese people and satisfactory is almost hopeless.<br><br>
+												As the saying goes, the problem is the opportunity of invention and creation. It is because of the new
+												challenges of the TCSL in the Internet era and the dilemma of being unable to cover all-sides due to the
+												teachers' limited energy in the traditional teaching of correct writing of Chinese characters that the Easy
+												Chinese Code™ (ECCode™) and the concept of dynamic independent learning of Chinese based on it have been
+												born at the right moment. Its integrated design with the online dictionary solves the above two problems
+												well and provides the technical feasibility for making the task goal of the TCSL keep pace with the times
+												in the Internet era (See Figure 2 below).<br><br>
+											</h4>
+											<img src="img/info_solve_wpts_en.gif">
+											<h6>
+												Fig.2 Illustration of Application Model of Correct Chinese character Stroke Order and Literacy Dictionary
+											</h6><br><br>
+											<h4 class="text-justify">
+												Finally, we make a tabular comparison of human-computer dialogue tools for Chinese
+												character information processing, so that readers can have an overall understanding of these tools.
+											</h4>
+										</div>
+									</div>
+									<div>
+										<table style="text-align: center;font-size: 12.5px;">
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Attribute
+													Division of Primary and Secondary Tools</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Man
+													Machine Dialogue "Bridge"</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Comprehensive
+													Evaluation Standard</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Competition
+													Situation</td>
+											</tr>
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Primary
+													Tools</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Hard
+													or soft keyboard<br>(Such as wubi, pinyin input method)</td>
+												<td rowspan="3" style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">A
+													combination of a Chinese learning tool and an efficient Chinese typing tool for foreigners</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">No
+													similar products</td>
+											</tr>
+											<tr>
+												<td rowspan="2" style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Secondary
+													Tools</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Voice
+													input/machine translation</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">No
+													voice input if being unable to read the character out</td>
+											</tr>
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">Image
+													recognition input<br>(Such as writing, OCR scanning technology)</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">In
+													the early stage of learning Chinese by foreigners, few people use these artificial intelligence
+													technologies to learn Chinese because of the main reasons as follows:<br>● Unfamiliar with new
+													characters;<br>● It does not meet the convenience requirement of learning Chinese anytime and anywhere</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card CN">
+								<div class="card-header">
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 p-0" style="text-align: center;">
+											<h2>解决什么问题</h2>
+											<img style="max-height:240px;" src="img/info_solve_1.gif">
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div style="text-align: center;" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+											<h4 class="text-justify">
+												众所周知，语言应用所涉及到的听说读写能力培养，均受制于这门语言用户词汇量的多寡程度。<br><br>
+												目前，一方面，受制于教师的精力有限，教师不可能就每一个汉字都教一遍学习者如何正确地书写这个汉字并解释其字意；
+												另一个方面，互联网上涌现了很多在线字典，这些字典不但配有动画演示汉字的正确书写笔顺，也给出了汉字的字意解释和使用方法。
+												但是，这些资源却由于初学汉语者没有有效的手段进行检索而被使用率极其低下。所以，如何充分利用触手可得的网络资源，
+												让外国汉语学习者能够独立自主地学习汉字、自行扩大汉语词汇量，这应该是“师傅领进门，修行在个人”的寓意所在，也是对外汉语教学应该达成的任务目标。<br><br>
+												但是，汉语的互联网应用，对对外汉语教学提出了新的挑战。那种传统的、对汉语的互联网应用不闻不问的作法，已经很难适应外国汉语学习者和使用者的迫切需求了。换句话说，面对汉语的互联网应用，汉语的对外教学要不要与时俱进、做教学内容上的扩充和改进呢？<br><br>
+												例如，以下图所示为例。图中的Tom刚开始学习汉语才3个月，他的基本情况是：<br><br>
+											</h4>
+											<img src="img/info_solve_TomDict_cn.jpg">
+											<h6>
+												图1 想查汉字字典的Tom
+											</h6><br><br>
+											<h4 class="text-justify">
+												1. 他已经完全掌握了汉语拼音；<br>
+												2. 他完全掌握了汉字的基本笔画知识； <br>
+												3. 他学过了一些最常用的偏旁部首。<br><br>
+												但是，他遇到了这个“李”字不认识，身边也没有人能够告诉他这个汉字“李”应该如何发音、或者其汉语拼音字母是什么，他还没有掌握诸如笔画一类的汉字查字法（据莫大伟[David Moser]在其文章<a href="http://www.pinyin.info/readings/texts/moser.html">《Why
+													Chinese Is So Damn Hard?》</a>中吐槽外国人学习汉字字典查询方法，就如同在学习一门艺术一样极其耗费时间）……。也就是说，此时图中的Tom没有办法把这个生字“李”输进电子字典里面。每当这个时候，汉语拼音对于Tom来说，就失去了任何价值！而那些配有笔顺动画演示的在线字典对于教授外国人掌握汉字正确书写的意义也荡然无存了。
+												<br><br>
+												此外，对于掌握了相同数量汉字的外国人和中国人来说，他们利用电脑进行文字输入的速度也是天壤之别的。例如，同样是掌握了500个汉字，同样都认识“蜂”和“蜜”这两个字，但是中国人在成长的过程当中，可以从周围的语言环境中自然地得知“蜜蜂”和“蜂蜜”的区别，而99.5%的外国汉语学习者则没有这种自然积累词汇量的环境优势。也正因为诸如此类的诸多原因，才导致美国汉学家莫大伟（David
+												Moser）得出了汉语正在“落败于互联网”的这个结论（参见莫大伟著作<a href="https://www.penguin.com.au/books/billion-voices-china-s-search-common-language-9780734399595">《A
+													Billion Voices: China's Search for a Common Language》的第十五章“A Losing Battle: The Internet”</a>）。
+												<br><br>
+												但事实上，信息时代的中文无纸化办公也是“汉语”在“虚拟世界”里面的一种应用形式，或者说，“虚拟世界”也是汉语的一种应用场合，这是对外汉语教学无法回避的一个问题。在这个时代背景下，汉语对外教学应该在传统听说读写之外，再增加一个“键”，才能够体现这个互联网时代汉语与时俱进的基本特点。
+												<br><br>
+												然而，就汉语的键盘应用而言，目前对外汉语教学面对外国人虚拟世界的汉语学习和应用时，其最大的困境体现在两个方面：一个是查询电子字典的效率障碍难以逾越，另一个受限于词汇量太少而导致汉字键写的效率太低。例如，一个阿拉伯人学习德语，他可以用2个月的时间掌握德语字母和音标，并在此之后，他就可以独立、高效地在任何时空下查询德语新单词了。但是，同样是花费两三个月的时间，在他熟练掌握了汉语拼音和汉字基本笔画以及一些常有的汉字偏旁部首之后，他并不享有这种汉字生字学习的字典查询之便利性。这就导致外国人在学习汉语时，其词汇量积累的速度就远远地低于他们学习拼音语言时词汇量的积累速度。有鉴于此，其获得等价于中国人的、满意的汉字键写的速度当然也就遥遥无期了。
+												<br><br>
+												俗话说，问题所在，就是发明创造的机会所在。正是因为互联网时代对外汉语教学任务所面临的新挑战、以及传统汉字正确书写教学所面临的、由于教师精力有限而不能面面俱到的困境，《汉易码™》及其基于其上的“汉语动态自主学习”理念才应运而生了。其与在线字典的一体化设计，很好地解决了上述两个问题（参见下面图2示意），为互联网时代对外汉语任务目标的与时俱进提供了技术可行性。
+												<br><br>
+											</h4>
+											<img src="img/info_solve_WPTS_CN.gif">
+											<h6>
+												图2 汉字书写与识字字典应用示例
+											</h6><br><br>
+											<h4 class="text-justify">
+												最后，我们把汉字信息处理的人机对话工具做个表格化对比，以便读者对这些工具有个整体性的认识。
+											</h4>
+										</div>
+									</div>
+									<div>
+										<table style="text-align: center;font-size: 12.5px;">
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">工具主次属性</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">人机对话“桥梁”</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">综合评价标准</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">竞争现状</td>
+											</tr>
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">主流工具</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">软硬键盘<br>(如五笔、拼音输入法)</td>
+												<td rowspan="3" style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">集汉字学习工具与高效的外国人用中文打字工具于一体</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">没有同类产品</td>
+											</tr>
+											<tr>
+												<td rowspan="2" style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">支流工具</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">语音输入/机器翻译</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">不会读就无法语音输入</td>
+											</tr>
+											<tr>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">图像识别输入<br>(书写、OCR扫描技术)</td>
+												<td style="text-align: center;vertical-align: text-middle;padding: 6px 15px 6px 6px;border: 1px solid #666666;background: white;">在外国人学习汉语的初期，几乎没有人使用这些人工智能技术学习汉语，其主要原因是：<br>●
+													对生字书写不熟悉；<br>● 不满足语随时随地学习汉语的便利性要求。</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<!--End 页面主要内容-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+		<script type="text/javascript" src="js/main.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//登录标识
+				function validata() {
+					var flag = sessionStorage.getItem("loginflag");
+					if (flag == 1) {
+						return true;
+					} else
+						return false;
+				}
+				//uesr菜单
+				function protest() {
+					var username = sessionStorage.getItem("_username");
+					if (validata() == 1) {
+						$("#user").css('display', 'block');
+						$("#username").html('<b>' + username + '<span class="caret"></span></b>');
+						$("#username_CN").html('<b>' + username + '<span class="caret"></span></b>');
+						$("#login").css('display', 'none');
+					}
+				}
+				protest();
+				$(".CN_change").click(function() {
+					sessionStorage.setItem("language", "CN");
+					$(".CN").css('display', 'block');
+					$(".EN").css('display', 'none');
+				});
+				$(".EN_change").click(function() {
+					sessionStorage.setItem("language", "EN");
+					$(".CN").css('display', 'none');
+					$(".EN").css('display', 'block');
+				});
+
+				function language() {
+					var lan_flag = sessionStorage.getItem("language");
+					if (lan_flag == "CN") {
+						$(".CN").css('display', 'block');
+						$(".EN").css('display', 'none');
+					} else {
+						$(".CN").css('display', 'none');
+						$(".EN").css('display', 'block');
+					}
+				}
+				language();
+			});
+		</script>
+	</body>
+</html>

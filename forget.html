@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Change password</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-3 col-md-6">
+					<div class="form-horizontal">
+						<span class="heading">Forget password</span>
+						<div class="_username form-group p-0 mt-5">
+							<input type="text" p="1" class="username form-control" placeholder="User's name" autocomplete="off">
+							<b></b>
+						</div>
+						<div class="_email form-group p-0 mt-5">
+							<input type="text" p="1" class="email form-control" placeholder="User's email" autocomplete="off">
+							<b></b>
+						</div>
+						<div class="_pasw form-group p-0 mt-5">
+							<input type="password" class="pasw form-control" p="1" placeholder="Input new Password">
+							<b></b>
+						</div>
+						<div class="_pasws form-group help p-0 mt-5">
+							<input type="password" class="pasws form-control" p="1" placeholder="Input Password again">
+							<b></b>
+						</div>
+						<div class="input-group mt-5">
+							<input type="text" class="_button correct form-control" placeholder="输入验证码">
+							<div class="input-group-append">
+								<button class="btn_post btn btn-outline-secondary disabled=true " type="button">获得验证码</button>
+							</div>
+						</div>
+						<div class="btn_pasw form-group p-0 mt-5" style="text-align:center;">
+							<button type="submit" class="btn btn-default">submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="position: relative;">
+			<div class="container" style="text-align: center;">
+				<p style="font-size:18px;">&copy;2019 Nanjing Narong Computer Hanzi Technology Co.Ltd.:All rights reserved</p>
+				<p class="col-12" style="font-size: small;"><a href="http://www.miitbeian.gov.cn/">苏ICP备19023054号</a></p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".btn_post").click(function() {
+					var _username = $(".username").val();
+					var _email = $(".email").val();
+					$.ajax({
+						type: 'POST',
+						url: 'http://server.fingerchinese.com:8083/user/sendfindbackCode',
+						data: {
+							"email": _email,
+							"username": _username
+						},
+						success: function(data) {
+							setTime($(".btn_post"));
+						},
+						error: function(e) {
+
+						}
+					});
+				});
+
+				var countdown = 60;
+
+				function setTime(obj) {
+					if (countdown == 0) {
+						obj.prop('disabled', false);
+						obj.text("获取验证码");
+						obj.css("background", "#00b4ef");
+						countdown = 60; //60秒过后button上的文字初始化,计时器初始化;
+						return;
+					} else {
+						obj.prop('disabled', true);
+						obj.text("(" + countdown + "s)后重新发送");
+						obj.css("background", "red");
+						obj.css("color", "white");
+						countdown--;
+					}
+					setTimeout(function() {
+						setTime(obj)
+					}, 1000) //每1000毫秒执行一次
+				}
+
+				$(".btn_pasw").click(function() {
+					var _username = $(".username").val();
+					var _email = $(".email").val();
+					var pasws = $(".pasws").val();
+					var pasw = $(".pasw").val();
+					var emailCode = $(".correct").val();
+					_data = {
+						"email": _email,
+						"emailCode": emailCode,
+						"newPassword": pasw,
+						"newPassword2": pasws,
+						"username": _username
+					};
+					$.ajax({
+						type: 'POST',
+						url: 'http://server.fingerchinese.com:8083/user/findbackPassword',
+						contentType:"application/json",
+						data: JSON.stringify(_data),
+						success: function(data) {
+							if (data.status == 100) {
+								alert("修改成功");
+								var twoUrl = encodeURI("login.html"); //使用encodeURI编码
+								location.href = twoUrl;
+							} else {
+								alert("修改失败");
+							}
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					})
+				});
+
+				$(".username").blur(function() {
+					var value = $(".username").val();
+					$(".username").attr("p", "1");
+					if (isEmpty(value)) {
+						console.log(isEmpty(value));
+						$(".username+b").html("Username not empty!");
+					} else {
+						$(".email").attr("p", "0");
+						$(".email+b").html("");
+					}
+				});
+				$(".email").blur(function() {
+					var value = $(".email").val();
+					$(".email").attr("p", "1");
+					if (isEmpty(value)) {
+						console.log(isEmpty(value));
+						$(".email+b").html("Email not empty!");
+					} else if (!isEmail(value))
+						$(".email+b").html("Incompatible eamil number!");
+					else {
+						$(".email").attr("p", "0");
+						$(".email+b").html("");
+					}
+				});
+				$(".pasw").blur(function() {
+					var value = $(".pasw").val();
+					var text1 = "请正确输入密码!";
+					$(".pasw").attr("p", "1");
+					if (isEmpty(value)) {
+						console.log(isEmpty(value));
+						$(".pasw+b").html("Password not empty!");
+					} else if (!isPasswd(value))
+						$(".pasw+b").html("Password too simple!");
+					else {
+						$(".pasw+b").html("");
+						$(".pasw").attr("p", "0");
+					}
+				});
+				$(".pasws").blur(function() {
+					var value = $(".pasws").val();
+					var value_ = $(".pasw").val();
+					var text1 = "请正确输入密码!";
+					$(".pasw").attr("p", "0");
+					if (isEmpty(value)) {
+						console.log(isEmpty(value));
+						$(".pasws+b").html("Password not empty!");
+					} else {
+						if (isEmpty(value_)) {
+							console.log(isEmpty(value));
+							$(".pasw+b").html("Password not empty!");
+						} else if (value != value_)
+							$(".pasws+b").html("Two password entries are different!");
+						else {
+							$(".pasws+b").html("");
+							$(".pasw").attr("p", "0");
+						}
+					}
+				});
+
+				function isEmail(value) {
+					var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+					return myreg.test(value);
+				}
+
+				function isEmpty(value) {
+					return (value.length == 0) ? true : false;
+				}
+
+				function isPasswd(value) {
+					var myreg = /^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)])+$)^.{8,16}$/; //8-16位密码
+					return myreg.test(value);
+				}
+			});
+		</script>
+	</body>
+</html>
